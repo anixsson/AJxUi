@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="ajxf.css">
+<p>The for/in statement loops through the properties of an object.</p>
+
+<div id="demo"></div>
+
+<div id="aa" style="display: none; top:0;left:0;width:60px;height:60px;background-color: aqua; position: absolute"> 
+    <button>One</button>
+    <button>Two</button>
+</div>
+
+<script src="classes/AJxTreeView.js"></script>
+<script>
+
+let a = new AJxTreeView("demo");
+
+
+// var person = [
+//     "First",
+//     [
+//         "Second",
+//         "Second",
+//         "Second",
+//     ],
+//     "First",
+//     "First",
+//     [
+//         "Second",
+//         [
+//             "Third",
+//             "Third",
+//             "Third",
+//             [
+//                 "Forth",
+//                 "Forth",
+//                 [
+//                     "Fifth",
+//                     "Fifth",
+//                     [
+//                         "Sixa"
+//                     ]
+//                 ]
+//             ]
+//         ]
+//     ]
+// ]
+
+
+
+let ax = {
+     type : "folder",
+    title : "MyFolder",
+     icon : "folder_close",
+      sub : {}
+}
+
+let bx = {
+         type : "file",
+        title : "MyFile",
+         icon : "file",
+    innerHTML : ""
+}
+
+
+var person = {
+    First1: 
+    {},
+    First2: 
+    {
+        Second1:
+        {},
+        Second2:
+        {},
+        Second3:
+        {},
+    },
+    First3: 
+    {
+        Second1: 
+        {
+            Third1:
+            {},
+            Third2:
+            {},
+            Third3: 
+            {
+                Forth1:
+                {},
+                Forth2: 
+                {
+                    Fifth1:
+                    {},
+                    Fifth2: 
+                    {
+                        Sixa1:
+                        {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Object.keys(a).length
+
+// document.querySelectorAll('[property]'); // All with attribute named "property"
+// document.querySelectorAll('[property=value]'); // All with "property" set to "value" exactly.
+
+</script>
+
+</body>
+</html>

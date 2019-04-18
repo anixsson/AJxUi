@@ -1,0 +1,12 @@
+
+# SWITCH
+
+<label class="AJxSwitch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<label class="AJxSwitch">
+  <input type="checkbox" checked>
+  <span class="slider"></span>
+</label>
