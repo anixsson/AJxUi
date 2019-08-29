@@ -475,6 +475,7 @@ body {
 	padding:3px 8px;
 	text-decoration:none;
 	cursor: pointer;
+	border-radius: 0px;
 }
 .AJxButton:hover {
 	background-color: #2488d8;
