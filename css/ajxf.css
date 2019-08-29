@@ -755,6 +755,7 @@ body {
 	background-color:#0078d7;
 	font-weight: lighter;
 	border:0px solid #0078d7;
+	border-radius: 0px;
 }
 .AJxButton_SP02:hover {
 	background-color:#2488d8;
@@ -859,6 +860,7 @@ body {
 	outline: none;
 	font-size: 12px;
 	transition: 0.2s;
+	border-radius: 0px;
 }
 
 .active, .AJxAccordion:hover {
@@ -977,13 +979,14 @@ body {
 	margin-bottom: 15px;
 	width: 100%;
 	overflow-y: auto;
+	border-radius: 0px;
 }
 .AJxSelect select {
 	 font-family: 'Arial';
 	 display: inline-block;
 	 width: 100%;
 	 cursor: pointer;
-	 padding: 0px 6px;
+	 padding: 2px 6px;
 	 outline: 0;
 	 border: 0px solid #3173a0;
 	 border-radius: 0px;
@@ -1002,6 +1005,7 @@ body {
 	background: #eeeeee;
 	box-shadow: 0 0 0 #0078d7;
 	outline: none;
+	border-radius: 0px;
 }
 .AJxSelect select:disabled {
 	opacity: 0.5;
@@ -1009,7 +1013,7 @@ body {
 }
 .AJxSelect_arrow {
 	position: absolute;
-	top: 9px;
+	top: 7px;
 	right: 6px;
 	pointer-events: none;
 	border-style: solid;
@@ -1071,6 +1075,7 @@ dl.horizontal dd {
 	display: inline-block;
 	border: none;
 	background: #eaeaea;
+	border-radius: 0px;
 }
 
 .AJxInput:focus {

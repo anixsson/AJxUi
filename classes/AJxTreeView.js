@@ -1,3 +1,5 @@
+"use strict";
+// Some Tyescript NEW
 var AJxTreeView = /** @class */ (function () {
     function AJxTreeView(ID) {
         var _this = this;
@@ -81,8 +83,8 @@ var AJxTreeView = /** @class */ (function () {
         var toggler = this.obj.getElementsByClassName("treeViewBox");
         for (var i = 0; i < toggler.length; i++) {
             toggler[i].addEventListener("dblclick", function () {
-                this.parentElement.querySelector(".treeViewNested").classList.toggle("active");
-                this.classList.toggle("check-box");
+                //this.parentElement.querySelector(".treeViewNested").classList.toggle("active");
+                //this.classList.toggle("check-box");
             });
         }
     };

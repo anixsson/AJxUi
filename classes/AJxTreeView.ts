@@ -1,4 +1,4 @@
-
+// Some Tyescript NEW
 class AJxTreeView {
 
     private obj: any; // The tree DOM object
@@ -106,8 +106,8 @@ class AJxTreeView {
         let toggler = this.obj.getElementsByClassName("treeViewBox");
         for (let i = 0; i < toggler.length; i++) {
             toggler[i].addEventListener("dblclick", function() {
-                this.parentElement.querySelector(".treeViewNested").classList.toggle("active");
-                this.classList.toggle("check-box");
+                //this.parentElement.querySelector(".treeViewNested").classList.toggle("active");
+                //this.classList.toggle("check-box");
             });
         }
     }
