@@ -13,10 +13,21 @@
 		body {
 			text-align: center;
 		}
+
 		section {
 			width: 60%
 		}
+
+		.require {
+			font-size: 12px;
+			color: green;
+		}
 	</style>
+
+	<!--
+	===========================================================================
+	INTRO
+	========================================================================-->
 
 	<h1>AJxUI</h1>
 	<p>The UI with great taste!</p>
@@ -29,218 +40,284 @@
 		</ul>
 		<article>
 			<h1>Content on this page</h1>
-			<p>New Content section to use</p>
-			<button class="AJxButton" onclick="copyText('19083019561')"> COPY ALL </button>
-			<textarea  id="19083019561" style="display: none">
-				<section>
-					<h1>Heading</h1>
-					<p>Content of this section</p>
-					<article>
+			<p>
+				New Content section to use <br>
+				<span class="require">Require CSS Framework</span>
+			</p>
+			<pre class="Codex">
+					<span>&lt;section&gt;</span>
+					<span>	&lt;h1&gt;Heading&lt;/h1&gt;</span>
+					<span>	&lt;p&gt;Content of this section&lt;/p&gt;</span>
+					<span>	&lt;article&gt;</span>
+					<span>		&lt;h1&gt;Heading&lt;/h1&gt;</span>
+					<span>		&lt;p&gt;Content of this section&lt;/p&gt;</span>
+					<span>	&lt;/article&gt;</span>
+					<span>&lt;/section&gt;</span>
+				</pre>
+			<textarea id="19083019561" style="display: none">
+					<section>
 						<h1>Heading</h1>
 						<p>Content of this section</p>
-					</article>
-				</section>
-			</textarea>
+						<article>
+							<h1>Heading</h1>
+							<p>Content of this section</p>
+						</article>
+					</section>
+				</textarea>
+			<button class="AJxButton" onclick="copyText('19083019561')"> COPY ALL </button>
+		</article>
+		<article>
+			<h1>Get code</h1>
+			<p>
+				Add a button to copy code <br>
+				<span class="require">Require Javascript Framework</span>
+			</p>
+
 			<pre class="Codex">
-				<span>&lt;section&gt;</span>
-				<span>	&lt;h1&gt;Heading&lt;/h1&gt;</span>
-				<span>	&lt;p&gt;Content of this section&lt;/p&gt;</span>
-				<span>	&lt;article&gt;</span>
-				<span>		&lt;h1&gt;Heading&lt;/h1&gt;</span>
-				<span>		&lt;p&gt;Content of this section&lt;/p&gt;</span>
-				<span>	&lt;/article&gt;</span>
-				<span>&lt;/section&gt;</span>
+				<span>&lt;textarea id="xxxxxxxxxxxxxx" style="display: none"&gt;&lt;/textarea&gt;</span>
+				<span>&lt;button class="AJxButton" onclick="updateGetCode('xxxxxxxxxxxxxx')"&gt; COPY ALL &lt;/button&gt;</span>
 			</pre>
+			<textarea id="19083019562" style="display: none"></textarea>
+			<button class="AJxButton" onclick="updateGetCode('19083019562')"> COPY ALL </button>
+			<textarea id="19083019565" style="display: none"></textarea>
+			<button class="AJxButton" onclick="updateGetDate('19083019565')"> COPY RANDOM TIME </button>
+			<script>
+				function updateGetCode(ID) {
+					let time = new Date().getTime();
+
+					let text = `
+					&lt;textarea id="` + time + `" style="display: none"&gt;
+				
+					&lt;/textarea&gt;
+					&lt;button class="AJxButton" onclick="copyText('`+ time + `')"&gt; COPY ALL &lt;/button&gt;
+					`
+
+					document.getElementById(ID).innerHTML = text;
+
+					copyText(ID);
+				}
+				function updateGetDate(ID) {
+					document.getElementById(ID).innerHTML = new Date().getTime();
+					copyText(ID);
+				}
+			</script>
+		</article>
+	</section>
+	<br>
+	<br>
+
+	<hr>
+
+	<!--
+	===========================================================================
+	NATIVE
+	========================================================================-->
+
+	<h1> Native Elements </h1>
+	<style>
+		.nativFlow {
+			box-shadow: 0px 0px 10px rgb(197, 197, 197);
+			display: inline-block;
+			border: solid 1px rgb(172, 172, 172);
+			padding: 5px;
+			margin: 10px;
+		}
+	</style>
+
+
+	<div class="nativFlow">
+		<span>Autofocus</span> <br>
+		<input type=text \autofocus>
+	</div>
+
+	<div class="nativFlow">
+		<span>Textarea</span><br>
+		<textarea></textarea>
+	</div>
+
+	<div class="nativFlow">
+		<span>Password</span><br>
+		<input type=password placeholder=password>
+	</div>
+
+	<div class="nativFlow">
+		<span>Select</span><br>
+		<select>
+			<option></option>
+			<option>Option 1</option>
+		</select>
+	</div>
+
+	<div class="nativFlow">
+		<span>Select Group</span><br>
+		<select>
+			<optgroup label="Option group 1">
+				<option>Option 1</option>
+				<option>Option 2</option>
+			</optgroup>
+			<optgroup>
+				<option>Option 3</option>
+			</optgroup>
+		</select>
+	</div>
+
+	<div class="nativFlow">
+		<span>Select File</span><br>
+		<input type=file><br>
+	</div>
+
+	<div class="nativFlow">
+		<span>Step Number</span><br>
+		<input type=number min=0 max=15 step=3>
+	</div>
+
+	<div class="nativFlow">
+		<span>Date</span><br>
+		<input type=date>
+	</div>
+
+
+	<div class="nativFlow">
+		<span>Date Month</span><br>
+		<input type=month>
+	</div>
+
+	<div class="nativFlow">
+		<span>Date Week</span><br>
+		<input type=week>
+	</div>
+
+	<div class="nativFlow">
+		<span>Time</span><br>
+		<input type=time>
+	</div>
+
+	<div class="nativFlow">
+		<span>Full Date</span><br>
+		<input type=datetime-local>
+	</div>
+
+	<div class="nativFlow">
+		<span>Color</span><br>
+		<input type=color value="#ff3d3d" onchange="document.body.style.backgroundColor = this.value">
+	</div>
+
+	<div class="nativFlow">
+		<span>Progress Load</span><br>
+		<progress class="AJxProgress"></progress>
+	</div>
+
+	<div class="nativFlow">
+		<span>Meter</span><br>
+		<meter value="100" min="0" max="100" low="25" high="75" optimum="15" id="prog2"></meter>
+	</div>
+	<div class="nativFlow">
+		<span>Multi Select</span><br>
+		<select multiple id="multi1" name="multi1">
+			<option>Banana</option>
+			<option>Cherry</option>
+			<option>Lemon</option>
+		</select>
+	</div>
+
+	<div class="nativFlow">
+		<span>Multi Select</span><br>
+		<select multiple id="multi2" name="multi2">
+			<optgroup label="fruits">
+				<option>Banana</option>
+				<option selected>Cherry</option>
+				<option>Lemon</option>
+			</optgroup>
+			<optgroup label="vegetables">
+				<option>Carrot</option>
+				<option>Eggplant</option>
+				<option>Potato</option>
+			</optgroup>
+		</select>
+	</div>
+
+	<div class="nativFlow">
+		<span>Autocomplete box</span><br>
+		<label for="myFruit">What's your favorite fruit?</label>
+		<input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+		<datalist id="mySuggestion">
+			<option>Apple</option>
+			<option>Banana</option>
+			<option>Blackberry</option>
+			<option>Blueberry</option>
+			<option>Lemon</option>
+			<option>Lychee</option>
+			<option>Peach</option>
+			<option>Pear</option>
+		</datalist>
+	</div>
+
+	<div class="nativFlow">
+		<span>Numbers</span><br>
+		<input type="number" name="age" id="age" min="1" max="10" step="2">
+	</div>
+
+	<div class="nativFlow">
+		<span>ImageBTN</span><br>
+		<input type="image" alt="Click me!" src="https://www.gstatic.com/webp/gallery/1.jpg" width="80" height="30" />
+	</div>
+
+	<div class="nativFlow">
+		<span>Accordion</span><br>
+		<details>
+			<summary>
+				How to beat the boss...spoiler alert !
+			</summary>
+			<p> Just aim to the red spots near his eyes</p>
+			<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+		</details>
+	</div>
+
+
+	<hr>
+
+	<!--
+	===========================================================================
+	AJxContent
+	========================================================================-->
+
+	<section>
+		<h1>Accordion with symbols</h1>
+		<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus"
+			sign is replaced with a "minus" sign.</p>
+		<article>
+			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 1</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex
+					ea commodo consequat.</p>
+			</div>
+
+			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 2</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex
+					ea commodo consequat.</p>
+			</div>
+
+			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 3</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex
+					ea commodo consequat.</p>
+			</div>
 		</article>
 	</section>
 
 
 
-	<h1> Native Elements </h1>
 
-	<span>Autofocus</span><br>
-	<input type=text \autofocus><br>
-
-	<span>Textarea</span><br>
-	<textarea></textarea><br>
-
-	<span>Password</span><br>
-	<input type=password placeholder=password><br>
-
-	<span>Select</span><br>
-	<select>
-		<option></option>
-		<option>Option 1</option>
-	</select>
-	<br>
-
-	<span>Select Group</span><br>
-	<select>
-		<optgroup label="Option group 1">
-			<option>Option 1</option>
-			<option>Option 2</option>
-		</optgroup>
-		<optgroup>
-			<option>Option 3</option>
-		</optgroup>
-	</select>
-
-	<br>
-	<span>Select File</span><br>
-	<input type=file><br>
-
-	<br>
-	<span>Step Number</span><br>
-	<input type=number min=0 max=15 step=3>
-	<br>
-
-
-
-
-	<br>
-	<span>Date</span><br>
-	<input type=date>
-	<br>
-
-	<br>
-	<span>Date Month</span><br>
-	<input type=month>
-	<br>
-
-	<br>
-	<span>Date Week</span><br>
-	<input type=week>
-	<br>
-
-	<br>
-	<span>Time</span><br>
-	<input type=time>
-	<br>
-
-	<br>
-	<span>Full Date</span><br>
-	<input type=datetime-local>
-	<br>
-
-	<br>
-	<span>Color</span><br>
-	<input type=color value="#ff3d3d" onchange="document.body.style.backgroundColor = this.value">
-	<br>
-
-
-
-	<br>
-	<span>Progress Load</span><br>
-	<progress class="AJxProgress"></progress>
-	<br>
-
-	<br>
-	<span>Meter</span><br>
-	<meter value="100" min="0" max="100" low="25" high="75" optimum="15" id="prog2"></meter>
-	<br>
-
-	<br>
-	<span>Multi Select</span><br>
-	<select multiple id="multi1" name="multi1">
-		<option>Banana</option>
-		<option>Cherry</option>
-		<option>Lemon</option>
-	</select>
-	<br>
-
-
-	<br>
-	<span>Multi Select</span><br>
-	<select multiple id="multi2" name="multi2">
-		<optgroup label="fruits">
-			<option>Banana</option>
-			<option selected>Cherry</option>
-			<option>Lemon</option>
-		</optgroup>
-		<optgroup label="vegetables">
-			<option>Carrot</option>
-			<option>Eggplant</option>
-			<option>Potato</option>
-		</optgroup>
-	</select>
-	<br>
-
-	<br>
-	<span>Autocomplete box</span><br>
-	<label for="myFruit">What's your favorite fruit?</label>
-	<input type="text" name="myFruit" id="myFruit" list="mySuggestion">
-	<datalist id="mySuggestion">
-		<option>Apple</option>
-		<option>Banana</option>
-		<option>Blackberry</option>
-		<option>Blueberry</option>
-		<option>Lemon</option>
-		<option>Lychee</option>
-		<option>Peach</option>
-		<option>Pear</option>
-	</datalist>
-	<br>
-
-
-	<br>
-	<span>Numbers</span><br>
-	<input type="number" name="age" id="age" min="1" max="10" step="2">
-	<br>
-
-
-	<br>
-	<span>ImageBTN</span><br>
-	<input type="image" alt="Click me!" src="https://www.gstatic.com/webp/gallery/1.jpg" width="80" height="30" />
-	<br>
-
-
-	<br>
-	<span></span><br>
-
-	<br>
-
-
-	<br>
-	<span></span><br>
-
-	<br>
-
-
-	<br>
-	<span></span><br>
-
-	<br>
-
-
-
-	<h2>Accordion with symbols</h2>
-	<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign 
-		is replaced with a "minus" sign.
-		\n
-		In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign 
-		is replaced with a "minus" sign.
-	</p>
-
-	<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 1</button>
-	<div class="panel">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			ea commodo consequat.</p>
-	</div>
-
-	<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 2</button>
-	<div class="panel">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			ea commodo consequat.</p>
-	</div>
-
-	<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 3</button>
-	<div class="panel">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			ea commodo consequat.</p>
-	</div>
 
 	<br>
 
