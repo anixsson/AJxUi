@@ -9,39 +9,57 @@
 </head>
 
 <body>
+	<style>
+		body {
+			text-align: center;
+		}
+		section {
+			width: 60%
+		}
+	</style>
 
-
-	<h1>Outside Section Rubrik</h1>
+	<h1>AJxUI</h1>
+	<p>The UI with great taste!</p>
 	<section>
-		<h1>Section Rubrik</h1>
-		<p>Some secont text about some in section</p>
+		<h1>Content</h1>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Coca Cola</li>
+		</ul>
 		<article>
-			<h1>Article Rubrik</h1>
-			<p>Some secont text about some in article</p>
-
-			<button onclick="copyText('myInput')"> ALL </button>
-			<textarea  id="myInput" style="display: none">
-				function Some(){
-					console.log("Text");
-				}
+			<h1>Content on this page</h1>
+			<p>New Content section to use</p>
+			<button class="AJxButton" onclick="copyText('19083019561')"> COPY ALL </button>
+			<textarea  id="19083019561" style="display: none">
+				<section>
+					<h1>Heading</h1>
+					<p>Content of this section</p>
+					<article>
+						<h1>Heading</h1>
+						<p>Content of this section</p>
+					</article>
+				</section>
 			</textarea>
-			<pre>
-				<span>def print_hi(name)</span>
-				<span>	puts "Hi, #{name}"</span>
-				<span>end</span>
-				<span></span>
-				<span>print_hi('Tom')</span>
-				<span>#=> prints 'Hi, Tom' to STDOUT.</span>
+			<pre class="Codex">
+				<span>&lt;section&gt;</span>
+				<span>	&lt;h1&gt;Heading&lt;/h1&gt;</span>
+				<span>	&lt;p&gt;Content of this section&lt;/p&gt;</span>
+				<span>	&lt;article&gt;</span>
+				<span>		&lt;h1&gt;Heading&lt;/h1&gt;</span>
+				<span>		&lt;p&gt;Content of this section&lt;/p&gt;</span>
+				<span>	&lt;/article&gt;</span>
+				<span>&lt;/section&gt;</span>
 			</pre>
 		</article>
 	</section>
 
-	
+
 
 	<h1> Native Elements </h1>
 
 	<span>Autofocus</span><br>
-	<input type=text autofocus><br>
+	<input type=text \autofocus><br>
 
 	<span>Textarea</span><br>
 	<textarea></textarea><br>
@@ -532,7 +550,7 @@
 	<hr>
 
 	<label>Text</label><br>
-	<input class="AJxInput" type=text autofocus><br>
+	<input class="AJxInput" type=text \autofocus><br>
 
 	<label>Password</label><br>
 	<input class="AJxInput" type=password placeholder=password><br>

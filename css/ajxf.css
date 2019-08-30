@@ -17,7 +17,10 @@ body {
 	background-color: #ffffff;
 }
 
-
+section {
+	text-align: left;
+	display: inline-block
+}
 
 
 
@@ -940,7 +943,7 @@ body {
 	width: 100%;
 	height: 3px;
 	cursor: pointer;
-	animate: 0.2s;
+	animation: 0.2s;
 	box-shadow: 0px 0px 0px #000000;
 	background: #0078d7;
 	border-radius: 0px;
@@ -1247,22 +1250,21 @@ ul {
 
 
 
-pre {
+.Codex, pre {
 	font-family: monospace;
 	background-color: #fff;
 	width: em(440);
-	margin: 4em auto;
 	padding: 0.5em;
 	border-radius: .25em;
 	box-shadow: .1em .1em .5em rgba(0,0,0,.45);
 	line-height: 0;
 	counter-reset: line;
   }
-span {
+.Codex span {
 	display: block;
 	line-height: 1.5rem;
 }
-span:before {
+.Codex span:before {
 	counter-increment: line;
 	content: counter(line);
 	display: inline-block;
