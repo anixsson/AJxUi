@@ -23,19 +23,55 @@
 			font-size: 12px;
 			color: green;
 		}
+		.sider {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			padding: 5px;
+			background-color: white;
+			text-align: left;
+			font-size: 10px;
+		}
+		.sider a {
+			color: black;
+			text-decoration: none;
+		}
+		.sider a:hover {
+			font-weight: bold;
+		}
 	</style>
+
+	<div class="sider">
+		<a href="#AJxUI">TOP</a><br>
+		<a href="#ContentOnThisPage">Content on this page</a><br>
+		<a href="#SectionTag">&nbsp;&nbsp;&nbsp;&nbsp;Section Tag</a><br>
+		<a href="#CodeBlock">&nbsp;&nbsp;&nbsp;&nbsp;Code Block</a><br>
+		<a href="#GetCode">&nbsp;&nbsp;&nbsp;&nbsp;Get code</a><br>
+		<a href="#NativeElements">Native Elements</a><br>
+		<a href="#NotificationSystem">Notification System</a><br>
+		<a href="#AccordionWithSymbols">Accordion With Symbols</a><br>
+		<a href="#FormElements">Form Elements</a><br>
+		<a href="#SolidButtons">&nbsp;&nbsp;&nbsp;&nbsp;Buttons</a><br>
+		<a href="#ToggleSwitch">&nbsp;&nbsp;&nbsp;&nbsp;Toggle</a><br>
+		<a href="#CustomCheckboxes">&nbsp;&nbsp;&nbsp;&nbsp;Checkboxes</a><br>
+		<a href="#CustomRadioButtons">&nbsp;&nbsp;&nbsp;&nbsp;Radio Buttons</a><br>
+		<a href="#DragRange">&nbsp;&nbsp;&nbsp;&nbsp;Range</a><br>
+		<a href="#Progress">&nbsp;&nbsp;&nbsp;&nbsp;Progress</a><br>
+		<a href="#Select">&nbsp;&nbsp;&nbsp;&nbsp;Select</a><br>
+		<a href="#Input">&nbsp;&nbsp;&nbsp;&nbsp;Input</a><br>
+	</div>
 
 	<!--
 	===========================================================================
 	INTRO
 	========================================================================-->
 
-	<h1>AJxUI</h1>
+	<h1 id="AJxUI">AJxUI</h1>
 	<p>The UI with great taste!</p>
 	<section>
-		<h1>Content on this page</h1>
+		<h1 id="ContentOnThisPage">Content on this page</h1>
 		<article>
-			<h1>Section tag</h1>
+			<h1 id="SectionTag">Section tag</h1>
 			<p>
 				New Content section to use <br>
 			</p>
@@ -63,7 +99,7 @@
 		</article>
 
 		<article>
-			<h1>Code Block</h1>
+			<h1 id="CodeBlock">Code Block</h1>
 			<p>
 				The visual code block <br>
 			</p>
@@ -80,7 +116,7 @@
 		</article>
 
 		<article>
-			<h1>Get code</h1>
+			<h1 id="GetCode">Get code</h1>
 			<p>
 				Add a button to copy code <br>
 			</p>
@@ -127,7 +163,7 @@
 	NATIVE
 	========================================================================-->
 
-	<h1> Native Elements </h1>
+	<h1 id="NativeElements"> Native Elements </h1>
 	<style>
 		.nativFlow {
 			box-shadow: 0px 0px 10px rgb(197, 197, 197);
@@ -299,7 +335,7 @@
 
 
 	<section>
-		<h1>Notification system</h1>
+		<h1 id="NotificationSystem">Notification System</h1>
 		<p> Show a stack of notifications in the top right <br>
 			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
@@ -327,7 +363,7 @@
 	<hr>
 
 	<section>
-		<h1>Accordion with symbols</h1>
+		<h1 id="AccordionWithSymbols">Accordion with symbols</h1>
 		<p>Slim accordions for use<br>
 			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
@@ -383,9 +419,9 @@
 	<hr>
 
 	<section>
-		<h1>Form elements</h1>
+		<h1 id="FormElements">Form elements</h1>
 		<article>
-			<h1>Solid Buttons</h1>
+			<h1 id="SolidButtons">Solid Buttons</h1>
 			<pre class="Codex">
 				<span>&lt;button&gt;Button&lt;/button&gt;</span>
 				<span></span>
@@ -426,8 +462,6 @@
 			<br>
 			<h1>Flat buttons</h1>
 			<pre class="Codex">
-				<span>&lt;button&gt;Button&lt;/button&gt;</span>
-				<span></span>
 				<span>&lt;button class="AJxButton flat"&gt;Button&lt;/button&gt;</span>
 				<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large&lt;/button&gt;</span>
 				<span></span>
@@ -451,23 +485,65 @@
 		
 			<br><br>
 			<h1>Special Buttons</h1>
-			<button class="AJxButton_SP02"><span>Hover </span></button>
-			<br>
+
+			<pre class="Codex">
+				<span>&lt;div class="AJxButton_SP01"&gt;</span>
+				<span>	&lt;span&gt;Standard&lt;/span&gt;</span>
+				<span>	&lt;p&gt;Some random text about it&lt;/p&gt;</span>
+				<span>&lt;/div&gt;</span>
+			</pre>
 			<div class="AJxButton_SP01">
 				<span>Standard</span>
 				<p>Some random text about it</p>
 			</div>
+			
+			<br><br><br>
+
+			<pre class="Codex">
+				<span>&lt;button class="AJxButton_SP02"&gt;&lt;span&gt;Hover &lt;/span&gt;&lt;/button&gt;</span>
+			</pre>
+			<button class="AJxButton_SP02"><span>Hover </span></button>
+			<br>
+
 		
 			<br>
 			<br>
+			<h1>Tab buttons</h1>
+			<pre class="Codex">
+					<span>&lt;div class="AJxTabs"&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;Section 0&lt;/button&gt;</span>
+					<span>	&lt;button class="AJxButton" disabled&gt;Section 1&lt;/button&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;Section 2&lt;/button&gt;</span>
+					<span>&lt;/div&gt;</span>
+			</pre>
 			<div class="AJxTabs">
 				<button class="AJxButton">Section 0</button>
 				<button class="AJxButton" disabled>Section 1</button>
 				<button class="AJxButton">Section 2</button>
 			</div>
-			<br>
+			<br><br>
 		
-			<p>Font awesome Icon</p>
+
+
+			<h1>Button with Icons</h1>
+			<p>Font awesome Icon
+				<br><span class="require">Require the Font awesome Framework</span><br>
+				<a href="https://fontawesome.com/" style="font-size: 10px">Font Awesome Homepage</a>
+			</p>
+
+			<b></b>
+			<pre class="Codex">
+				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;br&gt;Medal&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;div class="AJxTabs"&gt;</span>
+				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
+				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-bullhorn"&gt;&lt;/i&gt;Alert&lt;/button&gt;</span>
+				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt; Check&lt;/button&gt;</span>
+				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-comment-alt"&gt;&lt;/i&gt; Messages&lt;/button&gt;</span>
+				<span>&lt;/div&gt;</span>
+			</pre>
 			<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
 			<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
 			<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
@@ -495,118 +571,389 @@
 			</div>
 			<br>
 
+			<br>
+			<br>
+			<h1 id="ToggleSwitch">Toggle Switch</h1>
+			<pre class="Codex">
+				<span>&lt;input type="checkbox"&gt;</span>
+				<span>&lt;input type="checkbox" checked&gt;</span>
+			</pre>
+			
+			<input type="checkbox">
+		
+			<input type="checkbox" checked>
+			<br><br>
+
+
+			<pre class="Codex">
+					<span>&lt;label class="AJxSwitch"&gt;</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="slider"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch"&gt;</span>
+					<span>	&lt;input type="checkbox" checked&gt;</span>
+					<span>	&lt;span class="slider"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch"&gt;</span>
+					<span>	&lt;input type="checkbox" disabled&gt;</span>
+					<span>	&lt;span class="slider"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch"&gt;</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="slider round"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch red"&gt;</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="slider round"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch green"&gt;</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="slider round"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxSwitch yellow"&gt;</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="slider round"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+				</pre>
+
+			<label class="AJxSwitch">
+				<input type="checkbox">
+				<span class="slider"></span>
+			</label>
+		
+			<label class="AJxSwitch">
+				<input type="checkbox" checked>
+				<span class="slider"></span>
+			</label><br><br>
+		
+			<label class="AJxSwitch">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
+		
+			<label class="AJxSwitch">
+				<input type="checkbox" checked>
+				<span class="slider round"></span>
+			</label><br><br>
+		
+			<label class="AJxSwitch">
+				<input type="checkbox" disabled>
+				<span class="slider round"></span>
+			</label>
+		
+			<label class="AJxSwitch">
+				<input type="checkbox" checked disabled>
+				<span class="slider round"></span>
+			</label><br><br>
+		
+		
+			<label class="AJxSwitch red">
+				<input type="checkbox" checked>
+				<span class="slider"></span>
+			</label>
+			<label class="AJxSwitch red">
+				<input type="checkbox" checked>
+				<span class="slider round"></span>
+			</label>
+			<label class="AJxSwitch green">
+				<input type="checkbox" checked>
+				<span class="slider"></span>
+			</label>
+			<label class="AJxSwitch green">
+				<input type="checkbox" checked>
+				<span class="slider round"></span>
+			</label>
+			<label class="AJxSwitch yellow">
+				<input type="checkbox" checked>
+				<span class="slider"></span>
+			</label>
+			<label class="AJxSwitch yellow">
+				<input type="checkbox" checked>
+				<span class="slider round"></span>
+			</label>
+		
+			<br><br>
+		
+		
+		
+		
+		
+			<h1 id="CustomCheckboxes">Custom Checkboxes</h1>
+			<pre class="Codex">
+				<span>&lt;label class="AJxCheckbox"&gt;One</span>
+				<span>	&lt;input type="checkbox"&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+				<span></span>
+				<span>&lt;label class="AJxCheckbox"&gt;One</span>
+				<span>	&lt;input type="checkbox" checked="checked"&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+				<span></span>
+				<span>&lt;label class="AJxCheckbox"&gt;One</span>
+				<span>	&lt;input type="checkbox" disabled&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+				<span></span>
+			</pre>
+
+			<label class="AJxCheckbox">One
+				<input type="checkbox" checked="checked">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxCheckbox">Two
+				<input type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxCheckbox">Three
+				<input type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxCheckbox">Four
+				<input type="checkbox" disabled>
+				<span class="checkmark"></span>
+			</label>
+		
+		
+		
+		
+		
+		
+		
+			<h1 id="CustomRadioButtons">Custom Radio Buttons</h1>
+			<pre class="Codex">
+				<span>&lt;label class="AJxRadio"&gt;One</span>
+				<span>	&lt;input type="radio" checked="checked" name="radio"&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+				<span></span>
+				<span>&lt;label class="AJxRadio"&gt;Two</span>
+				<span>	&lt;input type="radio" name="radio"&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+				<span></span>
+				<span>&lt;label class="AJxRadio"&gt;Two</span>
+				<span>	&lt;input type="radio" name="radio" disabled&gt;</span>
+				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+				<span>&lt;/label&gt;</span>
+			</pre>
+			<label class="AJxRadio">One
+				<input type="radio" checked="checked" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxRadio">Two
+				<input type="radio" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxRadio">Three
+				<input type="radio" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<label class="AJxRadio">Four
+				<input type="radio" name="radio" disabled>
+				<span class="checkmark"></span>
+			</label>
+		
+		
+		
+		
+		
+			<br>
+			<h1 id="DragRange">Drag Range</h1>
+			<pre class="Codex">
+				<span>&lt;input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup=""&gt;</span>
+			</pre>
+			
+			<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup="cli()">
+			<br>
+		
+			<script>
+				function cli() {
+					console.log(document.getElementById("drag").value);
+					console.log(document.getElementById("prog1").value);
+					document.getElementById("prog1").value = document.getElementById("drag").value;
+					document.getElementById("prog2").value = document.getElementById("drag").value;
+					console.log("WIWI")
+				}
+			</script>
+		
+		
+			<br>
+			<h1 id="Progress">Progress</h1>
+			<pre class="Codex">
+				<span>&lt;progress class="AJxProgress" max="100" value="66" id="prog1" style="width: 200px"&gt;&lt;/progress&gt;</span>
+			</pre>
+			<progress max="100" value="66" id="prog1" style="width: 200px" class="AJxProgress"></progress>
+			<br>
+		
+		
+		
+		
+		
+		
+			<br>
+			<h1 id="Select">Select</h1>
+
+			<pre class="Codex">
+				<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
+				<span>	&lt;select&gt;</span>
+				<span>		&lt;option&gt;--Select--&lt;/option&gt;</span>
+				<span>		&lt;option&gt;Hello 1&lt;/option&gt;</span>
+				<span>		&lt;option&gt;Hello 2&lt;/option&gt;</span>
+				<span>		&lt;option&gt;Hello 3&lt;/option&gt;</span>
+				<span>		&lt;option&gt;Hello 4&lt;/option&gt;</span>
+				<span>	&lt;/select&gt;</span>
+				<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
+				<span>&lt;/div&gt;</span>
+			</pre>
+			<div class="AJxSelect" style="width: 100px">
+				<select>
+					<option>--Select--</option>
+					<option>Hello 1</option>
+					<option>Hello 2</option>
+					<option>Hello 3</option>
+					<option>Hello 4</option>
+				</select>
+				<div class="AJxSelect_arrow"></div>
+			</div>
+
+			<br>
+
+			<pre class="Codex">
+				<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
+				<span>	&lt;select&gt;</span>
+				<span>		&lt;optgroup label="fruits"&gt;</span>
+				<span>			&lt;option&gt;Banana&lt;/option&gt;</span>
+				<span>			&lt;option selected&gt;Cherry&lt;/option&gt;</span>
+				<span>			&lt;option&gt;Lemon&lt;/option&gt;</span>
+				<span>		&lt;/optgroup&gt;</span>
+				<span>		&lt;optgroup label="vegetables"&gt;</span>
+				<span>			&lt;option&gt;Carrot&lt;/option&gt;</span>
+				<span>			&lt;option&gt;Eggplant&lt;/option&gt;</span>
+				<span>			&lt;option&gt;Potato&lt;/option&gt;</span>
+				<span>		&lt;/optgroup&gt;</span>
+				<span>	&lt;/select&gt;</span>
+				<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
+				<span>&lt;/div&gt;</span>
+			</pre>
+
+			<div class="AJxSelect" style="width: 100px">
+				<select>
+					<optgroup label="fruits">
+						<option>Banana</option>
+						<option selected>Cherry</option>
+						<option>Lemon</option>
+					</optgroup>
+					<optgroup label="vegetables">
+						<option>Carrot</option>
+						<option>Eggplant</option>
+						<option>Potato</option>
+					</optgroup>
+				</select>
+				<div class="AJxSelect_arrow"></div>
+			</div>
+		
+		
+		
+		
+		
+			<br>
+			<h1>Multi Select</h1>
+			<pre class="Codex">
+				<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px;"&gt;</span>
+				<span>	&lt;option&gt;Banana&lt;/option&gt;</span>
+				<span>	&lt;option&gt;Cherry&lt;/option&gt;</span>
+				<span>	&lt;option&gt;Lemon&lt;/option&gt;</span>
+				<span>&lt;/select&gt;</span>
+			</pre>
+			<select class="AJxSelect" multiple name="multi1" style="width: 150px;">
+				<option>Banana</option>
+				<option>Cherry</option>
+				<option>Lemon</option>
+			</select>
+			<br>
+		
+			<br>
+			<pre class="Codex">
+				<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px"&gt;</span>
+				<span>	&lt;optgroup label="fruits"&gt;</span>
+				<span>		&lt;option&gt;Banana&gt;/option&gt;</span>
+				<span>		&lt;option selected&gt;Cherry&gt;/option&gt;</span>
+				<span>		&lt;option&gt;Lemon&gt;/option&gt;</span>
+				<span>	&lt;/optgroup&gt;</span>
+				<span>	&lt;optgroup label="vegetables"&gt;</span>
+				<span>		&lt;option&gt;Carrot&gt;/option&gt;</span>
+				<span>		&lt;option&gt;Eggplant&gt;/option&gt;</span>
+				<span>		&lt;option&gt;Potato&gt;/option&gt;</span>
+				<span>	&lt;/optgroup&gt;</span>
+				<span>&lt;/select&gt;</span>
+			</pre>
+			<select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px">
+				<optgroup label="fruits">
+					<option>Banana</option>
+					<option selected>Cherry</option>
+					<option>Lemon</option>
+				</optgroup>
+				<optgroup label="vegetables">
+					<option>Carrot</option>
+					<option>Eggplant</option>
+					<option>Potato</option>
+				</optgroup>
+			</select>
+			<br>
+		
+		
+		
+			<h1 id="Input">Input</h1>
+			<pre class="Codex">
+				<span>&lt;label&gt;Text&lt;/label&gt;&lt;br&gt;</span>
+				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+			</pre>
+			<label>Text</label><br>
+			<input class="AJxInput" type=text \autofocus><br>
+		
+			<pre class="Codex">
+				<span>&lt;label&gt;Password&lt;/label&gt;&lt;br&gt;</span>
+				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+			</pre>
+			<label>Password</label><br>
+			<input class="AJxInput" type=password placeholder=password><br>
+		
+			<pre class="Codex">
+				<span>&lt;label&gt;Textarea&lt;/label&gt;&lt;br&gt;</span>
+				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+			</pre>
+			<label>Textarea</label><br>
+			<textarea class="AJxInput"></textarea><br>
+		
+			<pre class="Codex">
+				<span>&lt;label&gt;Number&lt;/label&gt;&lt;br&gt;</span>
+				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+			</pre>
+			<label>Number</label><br>
+			<input class="AJxInput" type=number min=0 max=15 step=3><br>
+		
+			<br>
+
 
 		</article>
 	</section>
 	
 
-
-
-
-
-
-	<h1 id="C4">Custom Buttons</h1>
 	
 
 
-	<h2>Toggle Switch</h2>
+	
 
-	<label class="">
-		<input type="checkbox">
-		<span class="slider"></span>
-	</label>
-
-	<label class="">
-		<input type="checkbox" checked>
-		<span class="slider"></span>
-	</label><br><br>
-
-
-
-
-
-
-	<h2>Toggle Switch</h2>
-
-	<label class="AJxSwitch">
-		<input type="checkbox">
-		<span class="slider"></span>
-	</label>
-
-	<label class="AJxSwitch">
-		<input type="checkbox" checked>
-		<span class="slider"></span>
-	</label><br><br>
-
-	<label class="AJxSwitch">
-		<input type="checkbox">
-		<span class="slider round"></span>
-	</label>
-
-	<label class="AJxSwitch">
-		<input type="checkbox" checked>
-		<span class="slider round"></span>
-	</label><br><br>
-
-	<label class="AJxSwitch">
-		<input type="checkbox" disabled>
-		<span class="slider round"></span>
-	</label>
-
-	<label class="AJxSwitch">
-		<input type="checkbox" checked disabled>
-		<span class="slider round"></span>
-	</label><br><br>
-
-
-	<label class="AJxSwitch red">
-		<input type="checkbox" checked>
-		<span class="slider"></span>
-	</label>
-	<label class="AJxSwitch red">
-		<input type="checkbox" checked>
-		<span class="slider round"></span>
-	</label>
-	<label class="AJxSwitch green">
-		<input type="checkbox" checked>
-		<span class="slider"></span>
-	</label>
-	<label class="AJxSwitch green">
-		<input type="checkbox" checked>
-		<span class="slider round"></span>
-	</label>
-	<label class="AJxSwitch yellow">
-		<input type="checkbox" checked>
-		<span class="slider"></span>
-	</label>
-	<label class="AJxSwitch yellow">
-		<input type="checkbox" checked>
-		<span class="slider round"></span>
-	</label>
-
-	<br><br>
-
-
-
-
-
-	<h1>Custom Checkboxes</h1>
-	<label class="AJxCheckbox">One
-		<input type="checkbox" checked="checked">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxCheckbox">Two
-		<input type="checkbox">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxCheckbox">Three
-		<input type="checkbox">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxCheckbox">Four
-		<input type="checkbox" disabled>
-		<span class="checkmark"></span>
-	</label>
+	
 
 
 
@@ -614,133 +961,8 @@
 
 
 
-	<h1>Custom Radio Buttons</h1>
-	<label class="AJxRadio">One
-		<input type="radio" checked="checked" name="radio">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxRadio">Two
-		<input type="radio" name="radio">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxRadio">Three
-		<input type="radio" name="radio">
-		<span class="checkmark"></span>
-	</label>
-	<label class="AJxRadio">Four
-		<input type="radio" name="radio" disabled>
-		<span class="checkmark"></span>
-	</label>
 
-
-
-
-
-	<br>
-	<span>Drag range</span><br>
-	<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup="cli()">
-	<br>
-
-	<script>
-		function cli() {
-			console.log(document.getElementById("drag").value);
-			console.log(document.getElementById("prog1").value);
-			document.getElementById("prog1").value = document.getElementById("drag").value;
-			document.getElementById("prog2").value = document.getElementById("drag").value;
-			console.log("WIWI")
-		}
-	</script>
-
-
-	<br>
-	<span>Progress</span><br>
-	<progress max="100" value="66" id="prog1" class="AJxProgress"></progress>
-	<br>
-
-
-
-
-
-
-	<br>
-	<span>AJxSelect</span><br>
-	<div class="AJxSelect" style="width: 100px">
-		<select>
-			<option>--Select--</option>
-			<option>Hello 1</option>
-			<option>Hello 2</option>
-			<option>Hello 3</option>
-			<option>Hello 4</option>
-		</select>
-		<div class="AJxSelect_arrow">
-		</div>
-	</div>
-	<br>
-	<div class="AJxSelect" style="width: 100px">
-		<select>
-			<optgroup label="fruits">
-				<option>Banana</option>
-				<option selected>Cherry</option>
-				<option>Lemon</option>
-			</optgroup>
-			<optgroup label="vegetables">
-				<option>Carrot</option>
-				<option>Eggplant</option>
-				<option>Potato</option>
-			</optgroup>
-		</select>
-		<div class="AJxSelect_arrow">
-		</div>
-	</div>
-
-
-
-
-
-	<br>
-	<span>Multi Select</span><br>
-	<select class="AJxSelect" multiple name="multi1" style="width: 150px;">
-		<option>Banana</option>
-		<option>Cherry</option>
-		<option>Lemon</option>
-	</select>
-	<br>
-
-	<br>
-	<span>Multi Select</span><br>
-	<select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px">
-		<optgroup label="fruits">
-			<option>Banana</option>
-			<option selected>Cherry</option>
-			<option>Lemon</option>
-		</optgroup>
-		<optgroup label="vegetables">
-			<option>Carrot</option>
-			<option>Eggplant</option>
-			<option>Potato</option>
-		</optgroup>
-	</select>
-	<br>
-
-
-
-	<br>
-	<hr>
-
-	<label>Text</label><br>
-	<input class="AJxInput" type=text \autofocus><br>
-
-	<label>Password</label><br>
-	<input class="AJxInput" type=password placeholder=password><br>
-
-	<label>Textarea</label><br>
-	<textarea class="AJxInput"></textarea><br>
-
-	<label>Textarea</label><br>
-	<input class="AJxInput" type=number min=0 max=15 step=3><br>
-
-	<hr>
-	<br>
+	
 
 
 
