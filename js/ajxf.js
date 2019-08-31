@@ -74,16 +74,19 @@ function notix(text, time, bgcolor, txcolor){
 	box.style.top = 35 * box_index + "px";
 
 	box.addEventListener("click", function(event){
+		notix_stack[box_index] = null;
 		event.currentTarget.remove();
-	}, false)
-
-	box.addEventListener("DOMNodeInserted", function(event){
-		setTimeout(function(){
-			notix_stack[box_index] = null;
-			event.target.remove();
-		}.bind(event, box_index), time);
-
 	}.bind(box_index), false)
+
+	if (time != 0) {
+		box.addEventListener("DOMNodeInserted", function(event){
+			setTimeout(function(){
+				notix_stack[box_index] = null;
+				event.target.remove();
+			}.bind(event, box_index), time);
+	
+		}.bind(box_index), false)
+	}
 
 	document.body.insertAdjacentElement("beforeend", box);
 }

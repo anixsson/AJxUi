@@ -15,7 +15,8 @@
 		}
 
 		section {
-			width: 60%
+			width: 60%;
+			margin: 10px 0px 30px 0px;
 		}
 
 		.require {
@@ -47,7 +48,7 @@
 					<span>		&lt;p&gt;Content of this section&lt;/p&gt;</span>
 					<span>	&lt;/article&gt;</span>
 					<span>&lt;/section&gt;</span>
-				</pre>
+			</pre>
 			<textarea id="19083019561" style="display: none">
 					<section>
 						<h1>Heading</h1>
@@ -57,9 +58,27 @@
 							<p>Content of this section</p>
 						</article>
 					</section>
-				</textarea>
+			</textarea>
 			<button class="AJxButton" onclick="copyText('19083019561')"> COPY ALL </button>
 		</article>
+
+		<article>
+			<h1>Code Block</h1>
+			<p>
+				The visual code block <br>
+			</p>
+			<pre class="Codex">
+				<span>&lt;pre class="Codex"&gt;</span>
+				<span>	&lt;span&gt;&lt;/span&gt;</span>
+				<span>&lt;/pre&gt;</span>
+			</pre>
+			<textarea id="1567209986521" style="display: none">
+				<pre class="Codex"><span>&amp;lt;&amp;gt;</span></pre>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567209986521')"> COPY ALL </button>
+			
+		</article>
+
 		<article>
 			<h1>Get code</h1>
 			<p>
@@ -97,8 +116,9 @@
 				}
 			</script>
 		</article>
+
 	</section>
-	<br><br><br><br>
+	<br><br>
 
 	<hr>
 
@@ -170,7 +190,6 @@
 		<input type=date>
 	</div>
 
-
 	<div class="nativFlow">
 		<span>Date Month</span><br>
 		<input type=month>
@@ -205,6 +224,7 @@
 		<span>Meter</span><br>
 		<meter value="100" min="0" max="100" low="25" high="75" optimum="15" id="prog2"></meter>
 	</div>
+
 	<div class="nativFlow">
 		<span>Multi Select</span><br>
 		<select multiple id="multi1" name="multi1">
@@ -267,6 +287,7 @@
 		</details>
 	</div>
 
+	<br><br>
 
 	<hr>
 
@@ -279,22 +300,57 @@
 
 	<section>
 		<h1>Notification system</h1>
-		<p> Show a notification <br>
-			<span class="require">Require Javascript & CSS Framework</span><br>
+		<p> Show a stack of notifications in the top right <br>
+			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
 		<article>
+			<h1>Call function</h1>
+			<p>Use <b>text</b> for the message, <b>time</b> is the time it shows, <b>bgcolor</b> is the background
+				color, <b>txcolor</b> is the text color!</p>
+			<p>Use time "0" for a constant message, click is required to close that notification.</p>
+			<pre class="Codex">
+					<span>notix(text, time, bgcolor, txcolor)</span>
+			</pre>
+			<textarea id="1567203445373" style="display: none">notix(text, time, bgcolor, txcolor)</textarea>
+			<button class="AJxButton" onclick="copyText('1567203445373')"> COPY ALL </button>
+		</article>
+		<article>
 			<h1>DEMO</h1>
-			<Button class="AJxButton" onclick="">NOTIFY</Button>
+			<Button class="AJxButton"
+				onclick="notix('This is a DEMO text, it disappears in 3 seconds', 3000, 'red', 'yellow')">3000, red,
+				yellow</Button>
+			<Button class="AJxButton" onclick="notix('This is a DEMO text, press it to close!', 0, 'blue', 'white')">0,
+				blue, white</Button>
 		</article>
 	</section>
 
-
+	<hr>
 
 	<section>
 		<h1>Accordion with symbols</h1>
-		<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus"
-			sign is replaced with a "minus" sign.</p>
+		<p>Slim accordions for use<br>
+			<span class="require">Require the Javascript & CSS Framework</span><br>
+		</p>
 		<article>
+			<p>This is one set of accordion. For multiple accordions, copy the same code multiply times. Its important the elements is in the folloowing order.</p>
+			<pre class="Codex">
+					<span>&lt;button class="AJxAccordion" onclick="ajxAccordion(this)"&gt;Section&lt;/button&gt;</span>
+					<span>&lt;div class="panel"&gt;</span>
+					<span>	// Content</span>
+					<span>&lt;/div&gt;</span>
+			</pre>
+			<textarea id="1567205903835" style="display: none">
+				<button class="AJxAccordion" onclick="ajxAccordion(this)"></button>
+				<div class="panel">
+					
+				</div>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567205903835')"> COPY ALL </button>
+
+		</article>
+
+		<article>
+			<h1>DEMO</h1>
 			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 1</button>
 			<div class="panel">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -324,12 +380,125 @@
 		</article>
 	</section>
 
+	<hr>
+
+	<section>
+		<h1>Form elements</h1>
+		<article>
+			<h1>Solid Buttons</h1>
+			<pre class="Codex">
+				<span>&lt;button&gt;Button&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class=" AJxButton large" disabled&gt;Button Large&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton" disabled&gt;Button&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton red"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class=" AJxButton red large" disabled&gt;Button Large&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton" red disabled&gt;Button&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton green"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class=" AJxButton green large" disabled&gt;Button Large&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton" green disabled&gt;Button&lt;/button&gt;</span>
+			</pre>
+			
+			<button>Button</button>
+			<br>
+			<button class="AJxButton">Button</button>
+			<button class=" AJxButton large">Button Large</button>
+			<button class=" AJxButton large" disabled>Button Large</button>
+			<button class="AJxButton" disabled>Button</button>
+			<br>
+		
+			<button class="AJxButton red">Button</button>
+			<button class=" AJxButton red large">Button Large</button>
+			<button class=" AJxButton red large" disabled>Button Large</button>
+			<button class="AJxButton red" disabled>Button</button>
+			<br>
+			<button class="AJxButton green">Button</button>
+			<button class=" AJxButton green large">Button Large</button>
+			<button class=" AJxButton green large" disabled>Button Large</button>
+			<button class="AJxButton green" disabled>Button</button>
+			<br>
+
+		
+
+			<br>
+			<h1>Flat buttons</h1>
+			<pre class="Codex">
+				<span>&lt;button&gt;Button&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton flat"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton red flat"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton red flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+				<span></span>
+				<span>&lt;button class="AJxButton green flat"&gt;Button&lt;/button&gt;</span>
+				<span>&lt;button class="AJxButton green flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+			</pre>
+
+			<button class="AJxButton flat">Button</button>
+			<button class="AJxButton flat large" disabled>Button</button>
+			<br>
+			<button class="AJxButton red flat">Button</button>
+			<button class="AJxButton red flat large" disabled>Button</button>
+			<br>
+			<button class="AJxButton green flat">Button</button>
+			<button class="AJxButton green flat large" disabled>Button</button>
 
 
+		
+			<br><br>
+			<h1>Special Buttons</h1>
+			<button class="AJxButton_SP02"><span>Hover </span></button>
+			<br>
+			<div class="AJxButton_SP01">
+				<span>Standard</span>
+				<p>Some random text about it</p>
+			</div>
+		
+			<br>
+			<br>
+			<div class="AJxTabs">
+				<button class="AJxButton">Section 0</button>
+				<button class="AJxButton" disabled>Section 1</button>
+				<button class="AJxButton">Section 2</button>
+			</div>
+			<br>
+		
+			<p>Font awesome Icon</p>
+			<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
+			<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
+			<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
+			<button class="AJxButton"><i class="fas fa-comment-alt"></i> Messages</button>
+			<br><br>
+			<div class="AJxTabs">
+				<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
+				<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
+				<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
+				<button class="AJxButton"><i class="fas fa-comment-alt"></i> Messages</button>
+			</div>
+			<br><br>
+			<div class="AJxTabs">
+				<button class="AJxButton"><i class="fas fa-award"></i><br>Medal</button>
+				<button class="AJxButton"><i class="fas fa-bullhorn"></i><br>Alert</button>
+				<button class="AJxButton"><i class="fas fa-check"></i><br>Check</button>
+				<button class="AJxButton"><i class="fas fa-comment-alt"></i><br>Messages</button>
+			</div>
+			<br><br>
+			<div class="AJxTabs">
+				<button class="AJxButton"><i class="fas fa-award"></i></button>
+				<button class="AJxButton"><i class="fas fa-bullhorn"></i></button>
+				<button class="AJxButton"><i class="fas fa-check"></i></button>
+				<button class="AJxButton"><i class="fas fa-comment-alt"></i></button>
+			</div>
+			<br>
 
 
-	<br>
-
+		</article>
+	</section>
+	
 
 
 
@@ -337,84 +506,7 @@
 
 
 	<h1 id="C4">Custom Buttons</h1>
-	<button>Button</button>
-	<br>
-	<button class="AJxButton">Button</button>
-	<button class=" AJxButton large">Button Large</button>
-	<button class=" AJxButton large" disabled>Button Large</button>
-	<button class="AJxButton" disabled>Button</button>
-	<br>
-
-	<button class="AJxButton red">Button</button>
-	<button class=" AJxButton red large">Button Large</button>
-	<button class=" AJxButton red large" disabled>Button Large</button>
-	<button class="AJxButton red" disabled>Button</button>
-	<br>
-	<button class="AJxButton green">Button</button>
-	<button class=" AJxButton green large">Button Large</button>
-	<button class=" AJxButton green large" disabled>Button Large</button>
-	<button class="AJxButton green" disabled>Button</button>
-	<br>
-
-	<br>
-	<div class="AJxButton_SP01">
-		<span>Standard</span>
-		<p>Some random text about it</p>
-	</div>
-	<br>
-
-	<p>Flat button</p>
-	<button class="AJxButton flat">Button</button>
-	<button class="AJxButton flat large" disabled>Button</button>
-	<br>
-	<button class="AJxButton red flat">Button</button>
-	<button class="AJxButton red flat large" disabled>Button</button>
-	<br>
-	<button class="AJxButton green flat">Button</button>
-	<button class="AJxButton green flat large" disabled>Button</button>
-
-	<br><br>
-
-	<div class="AJxTabs">
-		<button class="AJxButton">Section 0</button>
-		<button class="AJxButton" disabled>Section 1</button>
-		<button class="AJxButton">Section 2</button>
-	</div>
-
-	<br>
-	<hr>
-	<button class="AJxButton_SP02"><span>Hover </span></button>
-	<hr>
-
-	<br>
-
-	<p>Font awesome Icon</p>
-	<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
-	<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
-	<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
-	<button class="AJxButton"><i class="fas fa-comment-alt"></i> Messages</button>
-	<br><br>
-	<div class="AJxTabs">
-		<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
-		<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
-		<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
-		<button class="AJxButton"><i class="fas fa-comment-alt"></i> Messages</button>
-	</div>
-	<br><br>
-	<div class="AJxTabs">
-		<button class="AJxButton"><i class="fas fa-award"></i><br>Medal</button>
-		<button class="AJxButton"><i class="fas fa-bullhorn"></i><br>Alert</button>
-		<button class="AJxButton"><i class="fas fa-check"></i><br>Check</button>
-		<button class="AJxButton"><i class="fas fa-comment-alt"></i><br>Messages</button>
-	</div>
-	<br><br>
-	<div class="AJxTabs">
-		<button class="AJxButton"><i class="fas fa-award"></i></button>
-		<button class="AJxButton"><i class="fas fa-bullhorn"></i></button>
-		<button class="AJxButton"><i class="fas fa-check"></i></button>
-		<button class="AJxButton"><i class="fas fa-comment-alt"></i></button>
-	</div>
-	<br>
+	
 
 
 	<h2>Toggle Switch</h2>
