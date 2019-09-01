@@ -1115,7 +1115,7 @@ dl.horizontal dd {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 20px;
 }
 
 /* Track */
@@ -1280,6 +1280,51 @@ ul {
 	margin-right: .5em;
 	color: #888
 }
+
+
+
+
+
+
+
+
+.AJxDetails {
+	margin-bottom: 10px;
+}
+
+.AJxDetails summary {
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

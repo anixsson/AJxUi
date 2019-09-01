@@ -23,6 +23,7 @@
 			font-size: 12px;
 			color: green;
 		}
+
 		.sider {
 			position: fixed;
 			top: 0px;
@@ -32,10 +33,12 @@
 			text-align: left;
 			font-size: 10px;
 		}
+
 		.sider a {
 			color: black;
 			text-decoration: none;
 		}
+
 		.sider a:hover {
 			font-weight: bold;
 		}
@@ -47,6 +50,7 @@
 		<a href="#SectionTag">&nbsp;&nbsp;&nbsp;&nbsp;Section Tag</a><br>
 		<a href="#CodeBlock">&nbsp;&nbsp;&nbsp;&nbsp;Code Block</a><br>
 		<a href="#GetCode">&nbsp;&nbsp;&nbsp;&nbsp;Get code</a><br>
+		<a href="#CodeAccordion">&nbsp;&nbsp;&nbsp;&nbsp;Code Accordion</a><br>
 		<a href="#NativeElements">Native Elements</a><br>
 		<a href="#NotificationSystem">Notification System</a><br>
 		<a href="#AccordionWithSymbols">Accordion With Symbols</a><br>
@@ -59,23 +63,33 @@
 		<a href="#Progress">&nbsp;&nbsp;&nbsp;&nbsp;Progress</a><br>
 		<a href="#Select">&nbsp;&nbsp;&nbsp;&nbsp;Select</a><br>
 		<a href="#Input">&nbsp;&nbsp;&nbsp;&nbsp;Input</a><br>
+		<a href="#Typography">Typography</a><br>
+		<a href="#Headers">&nbsp;&nbsp;&nbsp;&nbsp;Headers</a><br>
+		<a href="#Blockquotes">&nbsp;&nbsp;&nbsp;&nbsp;Blockquotes</a><br>
+		<a href="#Format">&nbsp;&nbsp;&nbsp;&nbsp;Format</a><br>
+		<a href="#DescriptionLists">&nbsp;&nbsp;&nbsp;&nbsp;Description lists</a><br>
+		<a href="#StepList">&nbsp;&nbsp;&nbsp;&nbsp;Step List</a><br>
+		<a href="#Table">&nbsp;&nbsp;&nbsp;&nbsp;Table</a><br>
+		<a href="#List">&nbsp;&nbsp;&nbsp;&nbsp;List</a><br>
+		<a href="#NoneNative">NONE NATIVE</a><br>
 	</div>
 
-	<!--
+	<!-- 
 	===========================================================================
 	INTRO
 	========================================================================-->
 
 	<h1 id="AJxUI">AJxUI</h1>
-	<p>The UI with great taste!</p>
+	<p>The UI with a great taste!</p>
 	<section>
 		<h1 id="ContentOnThisPage">Content on this page</h1>
 		<article>
 			<h1 id="SectionTag">Section tag</h1>
-			<p>
-				New Content section to use <br>
-			</p>
-			<pre class="Codex">
+			<p>New Content section to use</p>
+			<!-- DETAILS -->
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
 					<span>&lt;section&gt;</span>
 					<span>	&lt;h1&gt;Heading&lt;/h1&gt;</span>
 					<span>	&lt;p&gt;Content of this section&lt;/p&gt;</span>
@@ -84,53 +98,62 @@
 					<span>		&lt;p&gt;Content of this section&lt;/p&gt;</span>
 					<span>	&lt;/article&gt;</span>
 					<span>&lt;/section&gt;</span>
-			</pre>
+				</pre>
+			</details>
+			<!-- GET CODE -->
 			<textarea id="19083019561" style="display: none">
-					<section>
-						<h1>Heading</h1>
-						<p>Content of this section</p>
-						<article>
-							<h1>Heading</h1>
-							<p>Content of this section</p>
-						</article>
-					</section>
+<section>
+	<h1>Heading</h1>
+	<p>Content of this section</p>
+	<article>
+		<h1>Heading</h1>
+		<p>Content of this section</p>
+	</article>
+</section>
 			</textarea>
-			<button class="AJxButton" onclick="copyText('19083019561')"> COPY ALL </button>
+			<button class="AJxButton" onclick="copyText('19083019561')"> Copy snippet </button>
 		</article>
 
 		<article>
 			<h1 id="CodeBlock">Code Block</h1>
-			<p>
-				The visual code block <br>
-			</p>
-			<pre class="Codex">
-				<span>&lt;pre class="Codex"&gt;</span>
-				<span>	&lt;span&gt;&lt;/span&gt;</span>
-				<span>&lt;/pre&gt;</span>
-			</pre>
+			<p>The visual code block</p>
+			<!-- DETAILS -->
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;pre class="Codex"&gt;</span>
+					<span>	&lt;span&gt;&lt;/span&gt;</span>
+					<span>&lt;/pre&gt;</span>
+				</pre>
+			</details>
+			<!-- GET CODE -->
 			<textarea id="1567209986521" style="display: none">
-				<pre class="Codex"><span>&amp;lt;&amp;gt;</span></pre>
+<pre class="Codex">
+	<span>&amp;lt;&amp;gt;</span>
+</pre>
 			</textarea>
-			<button class="AJxButton" onclick="copyText('1567209986521')"> COPY ALL </button>
-			
+			<button class="AJxButton" onclick="copyText('1567209986521')"> Copy snippet </button>
 		</article>
 
 		<article>
 			<h1 id="GetCode">Get code</h1>
-			<p>
-				Add a button to copy code <br>
-			</p>
-
-			<pre class="Codex">
-				<span>&lt;textarea id="xxxxxxxxxxxxxx" style="display: none"&gt;</span>
-				<span>	// Your code</span>
-				<span>&lt;/textarea&gt;</span>
-				<span>&lt;button class="AJxButton" onclick="copyText('xxxxxxxxxxxxxx')"&gt; COPY ALL &lt;/button&gt;</span>
-			</pre>
+			<p>Add a button to copy code</p>
+			<!-- DETAILS -->
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;textarea id="xxxxxxxxxxxxxx" style="display: none"&gt;</span>
+					<span>	// Your code</span>
+					<span>&lt;/textarea&gt;</span>
+					<span>&lt;button class="AJxButton" onclick="copyText('xxxxxxxxxxxxxx')"&gt; COPY ALL &lt;/button&gt;</span>
+				</pre>
+			</details>
+			<!-- GET CODE -->
 			<textarea id="19083019562" style="display: none"></textarea>
-			<button class="AJxButton" onclick="updateGetCode('19083019562')"> COPY ALL </button>
+			<button class="AJxButton" onclick="updateGetCode('19083019562')"> Copy snippet </button>
+			<!-- GET CODE -->
 			<textarea id="19083019565" style="display: none"></textarea>
-			<button class="AJxButton" onclick="updateGetDate('19083019565')"> COPY RANDOM TIME </button>
+			<button class="AJxButton" onclick="updateGetDate('19083019565')"> COPY a UNIQ-ID </button>
 			<script>
 				function updateGetCode(ID) {
 					let time = new Date().getTime();
@@ -153,8 +176,32 @@
 			</script>
 		</article>
 
+		<article>
+			<h1 id="CodeAccordion">Code Accordion</h1>
+			<p></p>
+			<!-- DETAILS -->
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;details class="AJxDetails"&gt;</span>
+					<span>	&lt;summary&gt; See code &lt;/summary&gt;</span>
+					<span></span>
+					<span>&lt;/details&gt;</span>
+				</pre>
+			</details>
+			<!-- GET CODE -->
+			<textarea id="1567341023387" style="display: none">
+<details class="AJxDetails">
+	<summary> See code </summary>
+
+</details>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567341023387')"> Copy snippet </button>
+		</article>
+
 	</section>
 	<br><br>
+
 
 	<hr>
 
@@ -368,13 +415,17 @@
 			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
 		<article>
-			<p>This is one set of accordion. For multiple accordions, copy the same code multiply times. Its important the elements is in the folloowing order.</p>
-			<pre class="Codex">
+			<p>This is one set of accordion. For multiple accordions, copy the same code multiply times. Its important
+				the elements is in the folloowing order.</p>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
 					<span>&lt;button class="AJxAccordion" onclick="ajxAccordion(this)"&gt;Section&lt;/button&gt;</span>
 					<span>&lt;div class="panel"&gt;</span>
 					<span>	// Content</span>
 					<span>&lt;/div&gt;</span>
-			</pre>
+				</pre>
+			</details>
 			<textarea id="1567205903835" style="display: none">
 				<button class="AJxAccordion" onclick="ajxAccordion(this)"></button>
 				<div class="panel">
@@ -422,22 +473,25 @@
 		<h1 id="FormElements">Form elements</h1>
 		<article>
 			<h1 id="SolidButtons">Solid Buttons</h1>
-			<pre class="Codex">
-				<span>&lt;button&gt;Button&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;button class="AJxButton"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class=" AJxButton large" disabled&gt;Button Large&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton" disabled&gt;Button&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;button class="AJxButton red"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class=" AJxButton red large" disabled&gt;Button Large&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton" red disabled&gt;Button&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;button class="AJxButton green"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class=" AJxButton green large" disabled&gt;Button Large&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton" green disabled&gt;Button&lt;/button&gt;</span>
-			</pre>
-			
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;button&gt;Button&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;button class="AJxButton"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton" disabled&gt;Button&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;button class="AJxButton red"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton red large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton" red disabled&gt;Button&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;button class="AJxButton green"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton green large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton" green disabled&gt;Button&lt;/button&gt;</span>
+				</pre>
+			</details>
+
 			<button>Button</button>
 			<br>
 			<button class="AJxButton">Button</button>
@@ -445,7 +499,7 @@
 			<button class=" AJxButton large" disabled>Button Large</button>
 			<button class="AJxButton" disabled>Button</button>
 			<br>
-		
+
 			<button class="AJxButton red">Button</button>
 			<button class=" AJxButton red large">Button Large</button>
 			<button class=" AJxButton red large" disabled>Button Large</button>
@@ -457,20 +511,26 @@
 			<button class="AJxButton green" disabled>Button</button>
 			<br>
 
-		
+
 
 			<br>
 			<h1>Flat buttons</h1>
-			<pre class="Codex">
-				<span>&lt;button class="AJxButton flat"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;button class="AJxButton red flat"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton red flat large" disabled&gt;Button Large&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;button class="AJxButton green flat"&gt;Button&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton green flat large" disabled&gt;Button Large&lt;/button&gt;</span>
-			</pre>
+
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;button class="AJxButton flat"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;button class="AJxButton red flat"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton red flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;button class="AJxButton green flat"&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton green flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+				</pre>
+			</details>
+
+
 
 			<button class="AJxButton flat">Button</button>
 			<button class="AJxButton flat large" disabled>Button</button>
@@ -482,47 +542,59 @@
 			<button class="AJxButton green flat large" disabled>Button</button>
 
 
-		
+
 			<br><br>
 			<h1>Special Buttons</h1>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;div class="AJxButton_SP01"&gt;</span>
+					<span>	&lt;span&gt;Standard&lt;/span&gt;</span>
+					<span>	&lt;p&gt;Some random text about it&lt;/p&gt;</span>
+					<span>&lt;/div&gt;</span>
+				</pre>
+			</details>
 
-			<pre class="Codex">
-				<span>&lt;div class="AJxButton_SP01"&gt;</span>
-				<span>	&lt;span&gt;Standard&lt;/span&gt;</span>
-				<span>	&lt;p&gt;Some random text about it&lt;/p&gt;</span>
-				<span>&lt;/div&gt;</span>
-			</pre>
+
 			<div class="AJxButton_SP01">
 				<span>Standard</span>
 				<p>Some random text about it</p>
 			</div>
-			
-			<br><br><br>
 
-			<pre class="Codex">
-				<span>&lt;button class="AJxButton_SP02"&gt;&lt;span&gt;Hover &lt;/span&gt;&lt;/button&gt;</span>
-			</pre>
+			<br><br><br>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;button class="AJxButton_SP02"&gt;&lt;span&gt;Hover &lt;/span&gt;&lt;/button&gt;</span>
+				</pre>
+			</details>
+
 			<button class="AJxButton_SP02"><span>Hover </span></button>
 			<br>
 
-		
+
 			<br>
 			<br>
 			<h1>Tab buttons</h1>
-			<pre class="Codex">
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
 					<span>&lt;div class="AJxTabs"&gt;</span>
 					<span>	&lt;button class="AJxButton"&gt;Section 0&lt;/button&gt;</span>
 					<span>	&lt;button class="AJxButton" disabled&gt;Section 1&lt;/button&gt;</span>
 					<span>	&lt;button class="AJxButton"&gt;Section 2&lt;/button&gt;</span>
 					<span>&lt;/div&gt;</span>
-			</pre>
+				</pre>
+			</details>
+
+
 			<div class="AJxTabs">
 				<button class="AJxButton">Section 0</button>
 				<button class="AJxButton" disabled>Section 1</button>
 				<button class="AJxButton">Section 2</button>
 			</div>
 			<br><br>
-		
+
 
 
 			<h1>Button with Icons</h1>
@@ -532,18 +604,23 @@
 			</p>
 
 			<b></b>
-			<pre class="Codex">
-				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;br&gt;Medal&lt;/button&gt;</span>
-				<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;/button&gt;</span>
-				<span></span>
-				<span>&lt;div class="AJxTabs"&gt;</span>
-				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
-				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-bullhorn"&gt;&lt;/i&gt;Alert&lt;/button&gt;</span>
-				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt; Check&lt;/button&gt;</span>
-				<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-comment-alt"&gt;&lt;/i&gt; Messages&lt;/button&gt;</span>
-				<span>&lt;/div&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;br&gt;Medal&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt;&lt;/button&gt;</span>
+					<span></span>
+					<span>&lt;div class="AJxTabs"&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-award"&gt;&lt;/i&gt; Medal&lt;/button&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-bullhorn"&gt;&lt;/i&gt;Alert&lt;/button&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt; Check&lt;/button&gt;</span>
+					<span>	&lt;button class="AJxButton"&gt;&lt;i class="fas fa-comment-alt"&gt;&lt;/i&gt; Messages&lt;/button&gt;</span>
+					<span>&lt;/div&gt;</span>
+				</pre>
+			</details>
+
+
 			<button class="AJxButton"><i class="fas fa-award"></i> Medal</button>
 			<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert</button>
 			<button class="AJxButton"><i class="fas fa-check"></i> Check</button>
@@ -574,18 +651,24 @@
 			<br>
 			<br>
 			<h1 id="ToggleSwitch">Toggle Switch</h1>
-			<pre class="Codex">
-				<span>&lt;input type="checkbox"&gt;</span>
-				<span>&lt;input type="checkbox" checked&gt;</span>
-			</pre>
-			
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;input type="checkbox"&gt;</span>
+					<span>&lt;input type="checkbox" checked&gt;</span>
+				</pre>
+			</details>
+
+
+
 			<input type="checkbox">
-		
+
 			<input type="checkbox" checked>
 			<br><br>
 
-
-			<pre class="Codex">
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
 					<span>&lt;label class="AJxSwitch"&gt;</span>
 					<span>	&lt;input type="checkbox"&gt;</span>
 					<span>	&lt;span class="slider"&gt;&lt;/span&gt;</span>
@@ -623,38 +706,41 @@
 					<span>&lt;/label&gt;</span>
 					<span></span>
 				</pre>
+			</details>
+
+
 
 			<label class="AJxSwitch">
 				<input type="checkbox">
 				<span class="slider"></span>
 			</label>
-		
+
 			<label class="AJxSwitch">
 				<input type="checkbox" checked>
 				<span class="slider"></span>
 			</label><br><br>
-		
+
 			<label class="AJxSwitch">
 				<input type="checkbox">
 				<span class="slider round"></span>
 			</label>
-		
+
 			<label class="AJxSwitch">
 				<input type="checkbox" checked>
 				<span class="slider round"></span>
 			</label><br><br>
-		
+
 			<label class="AJxSwitch">
 				<input type="checkbox" disabled>
 				<span class="slider round"></span>
 			</label>
-		
+
 			<label class="AJxSwitch">
 				<input type="checkbox" checked disabled>
 				<span class="slider round"></span>
 			</label><br><br>
-		
-		
+
+
 			<label class="AJxSwitch red">
 				<input type="checkbox" checked>
 				<span class="slider"></span>
@@ -679,31 +765,36 @@
 				<input type="checkbox" checked>
 				<span class="slider round"></span>
 			</label>
-		
+
 			<br><br>
-		
-		
-		
-		
-		
+
+
+
+
+
 			<h1 id="CustomCheckboxes">Custom Checkboxes</h1>
-			<pre class="Codex">
-				<span>&lt;label class="AJxCheckbox"&gt;One</span>
-				<span>	&lt;input type="checkbox"&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-				<span></span>
-				<span>&lt;label class="AJxCheckbox"&gt;One</span>
-				<span>	&lt;input type="checkbox" checked="checked"&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-				<span></span>
-				<span>&lt;label class="AJxCheckbox"&gt;One</span>
-				<span>	&lt;input type="checkbox" disabled&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-				<span></span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label class="AJxCheckbox"&gt;One</span>
+					<span>	&lt;input type="checkbox"&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxCheckbox"&gt;One</span>
+					<span>	&lt;input type="checkbox" checked="checked"&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxCheckbox"&gt;One</span>
+					<span>	&lt;input type="checkbox" disabled&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+				</pre>
+			</details>
+
+
 
 			<label class="AJxCheckbox">One
 				<input type="checkbox" checked="checked">
@@ -721,30 +812,35 @@
 				<input type="checkbox" disabled>
 				<span class="checkmark"></span>
 			</label>
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 			<h1 id="CustomRadioButtons">Custom Radio Buttons</h1>
-			<pre class="Codex">
-				<span>&lt;label class="AJxRadio"&gt;One</span>
-				<span>	&lt;input type="radio" checked="checked" name="radio"&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-				<span></span>
-				<span>&lt;label class="AJxRadio"&gt;Two</span>
-				<span>	&lt;input type="radio" name="radio"&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-				<span></span>
-				<span>&lt;label class="AJxRadio"&gt;Two</span>
-				<span>	&lt;input type="radio" name="radio" disabled&gt;</span>
-				<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
-				<span>&lt;/label&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label class="AJxRadio"&gt;One</span>
+					<span>	&lt;input type="radio" checked="checked" name="radio"&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxRadio"&gt;Two</span>
+					<span>	&lt;input type="radio" name="radio"&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+					<span></span>
+					<span>&lt;label class="AJxRadio"&gt;Two</span>
+					<span>	&lt;input type="radio" name="radio" disabled&gt;</span>
+					<span>	&lt;span class="checkmark"&gt;&lt;/span&gt;</span>
+					<span>&lt;/label&gt;</span>
+				</pre>
+			</details>
+
+
 			<label class="AJxRadio">One
 				<input type="radio" checked="checked" name="radio">
 				<span class="checkmark"></span>
@@ -761,20 +857,26 @@
 				<input type="radio" name="radio" disabled>
 				<span class="checkmark"></span>
 			</label>
-		
-		
-		
-		
-		
+
+
+
+
+
 			<br>
 			<h1 id="DragRange">Drag Range</h1>
-			<pre class="Codex">
-				<span>&lt;input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup=""&gt;</span>
-			</pre>
-			
-			<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup="cli()">
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup=""&gt;</span>
+				</pre>
+			</details>
+
+
+
+			<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px"
+				onmouseup="cli()">
 			<br>
-		
+
 			<script>
 				function cli() {
 					console.log(document.getElementById("drag").value);
@@ -784,36 +886,45 @@
 					console.log("WIWI")
 				}
 			</script>
-		
-		
+
+
 			<br>
 			<h1 id="Progress">Progress</h1>
-			<pre class="Codex">
-				<span>&lt;progress class="AJxProgress" max="100" value="66" id="prog1" style="width: 200px"&gt;&lt;/progress&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;progress class="AJxProgress" max="100" value="66" id="prog1" style="width: 200px"&gt;&lt;/progress&gt;</span>
+				</pre>
+			</details>
+
+
 			<progress max="100" value="66" id="prog1" style="width: 200px" class="AJxProgress"></progress>
 			<br>
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 			<br>
 			<h1 id="Select">Select</h1>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
+					<span>	&lt;select&gt;</span>
+					<span>		&lt;option&gt;--Select--&lt;/option&gt;</span>
+					<span>		&lt;option&gt;Hello 1&lt;/option&gt;</span>
+					<span>		&lt;option&gt;Hello 2&lt;/option&gt;</span>
+					<span>		&lt;option&gt;Hello 3&lt;/option&gt;</span>
+					<span>		&lt;option&gt;Hello 4&lt;/option&gt;</span>
+					<span>	&lt;/select&gt;</span>
+					<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
+					<span>&lt;/div&gt;</span>
+				</pre>
+			</details>
 
-			<pre class="Codex">
-				<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
-				<span>	&lt;select&gt;</span>
-				<span>		&lt;option&gt;--Select--&lt;/option&gt;</span>
-				<span>		&lt;option&gt;Hello 1&lt;/option&gt;</span>
-				<span>		&lt;option&gt;Hello 2&lt;/option&gt;</span>
-				<span>		&lt;option&gt;Hello 3&lt;/option&gt;</span>
-				<span>		&lt;option&gt;Hello 4&lt;/option&gt;</span>
-				<span>	&lt;/select&gt;</span>
-				<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
-				<span>&lt;/div&gt;</span>
-			</pre>
+
 			<div class="AJxSelect" style="width: 100px">
 				<select>
 					<option>--Select--</option>
@@ -827,23 +938,28 @@
 
 			<br>
 
-			<pre class="Codex">
-				<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
-				<span>	&lt;select&gt;</span>
-				<span>		&lt;optgroup label="fruits"&gt;</span>
-				<span>			&lt;option&gt;Banana&lt;/option&gt;</span>
-				<span>			&lt;option selected&gt;Cherry&lt;/option&gt;</span>
-				<span>			&lt;option&gt;Lemon&lt;/option&gt;</span>
-				<span>		&lt;/optgroup&gt;</span>
-				<span>		&lt;optgroup label="vegetables"&gt;</span>
-				<span>			&lt;option&gt;Carrot&lt;/option&gt;</span>
-				<span>			&lt;option&gt;Eggplant&lt;/option&gt;</span>
-				<span>			&lt;option&gt;Potato&lt;/option&gt;</span>
-				<span>		&lt;/optgroup&gt;</span>
-				<span>	&lt;/select&gt;</span>
-				<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
-				<span>&lt;/div&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;div class="AJxSelect" style="width: 100px"&gt;</span>
+					<span>	&lt;select&gt;</span>
+					<span>		&lt;optgroup label="fruits"&gt;</span>
+					<span>			&lt;option&gt;Banana&lt;/option&gt;</span>
+					<span>			&lt;option selected&gt;Cherry&lt;/option&gt;</span>
+					<span>			&lt;option&gt;Lemon&lt;/option&gt;</span>
+					<span>		&lt;/optgroup&gt;</span>
+					<span>		&lt;optgroup label="vegetables"&gt;</span>
+					<span>			&lt;option&gt;Carrot&lt;/option&gt;</span>
+					<span>			&lt;option&gt;Eggplant&lt;/option&gt;</span>
+					<span>			&lt;option&gt;Potato&lt;/option&gt;</span>
+					<span>		&lt;/optgroup&gt;</span>
+					<span>	&lt;/select&gt;</span>
+					<span>	&lt;div class="AJxSelect_arrow"&gt;&lt;/div&gt;</span>
+					<span>&lt;/div&gt;</span>
+				</pre>
+			</details>
+
+
 
 			<div class="AJxSelect" style="width: 100px">
 				<select>
@@ -860,42 +976,53 @@
 				</select>
 				<div class="AJxSelect_arrow"></div>
 			</div>
-		
-		
-		
-		
-		
+
+
+
+
+
 			<br>
 			<h1>Multi Select</h1>
-			<pre class="Codex">
-				<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px;"&gt;</span>
-				<span>	&lt;option&gt;Banana&lt;/option&gt;</span>
-				<span>	&lt;option&gt;Cherry&lt;/option&gt;</span>
-				<span>	&lt;option&gt;Lemon&lt;/option&gt;</span>
-				<span>&lt;/select&gt;</span>
-			</pre>
+
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px;"&gt;</span>
+					<span>	&lt;option&gt;Banana&lt;/option&gt;</span>
+					<span>	&lt;option&gt;Cherry&lt;/option&gt;</span>
+					<span>	&lt;option&gt;Lemon&lt;/option&gt;</span>
+					<span>&lt;/select&gt;</span>
+				</pre>
+			</details>
+
+
 			<select class="AJxSelect" multiple name="multi1" style="width: 150px;">
 				<option>Banana</option>
 				<option>Cherry</option>
 				<option>Lemon</option>
 			</select>
 			<br>
-		
+
 			<br>
-			<pre class="Codex">
-				<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px"&gt;</span>
-				<span>	&lt;optgroup label="fruits"&gt;</span>
-				<span>		&lt;option&gt;Banana&gt;/option&gt;</span>
-				<span>		&lt;option selected&gt;Cherry&gt;/option&gt;</span>
-				<span>		&lt;option&gt;Lemon&gt;/option&gt;</span>
-				<span>	&lt;/optgroup&gt;</span>
-				<span>	&lt;optgroup label="vegetables"&gt;</span>
-				<span>		&lt;option&gt;Carrot&gt;/option&gt;</span>
-				<span>		&lt;option&gt;Eggplant&gt;/option&gt;</span>
-				<span>		&lt;option&gt;Potato&gt;/option&gt;</span>
-				<span>	&lt;/optgroup&gt;</span>
-				<span>&lt;/select&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px"&gt;</span>
+					<span>	&lt;optgroup label="fruits"&gt;</span>
+					<span>		&lt;option&gt;Banana&gt;/option&gt;</span>
+					<span>		&lt;option selected&gt;Cherry&gt;/option&gt;</span>
+					<span>		&lt;option&gt;Lemon&gt;/option&gt;</span>
+					<span>	&lt;/optgroup&gt;</span>
+					<span>	&lt;optgroup label="vegetables"&gt;</span>
+					<span>		&lt;option&gt;Carrot&gt;/option&gt;</span>
+					<span>		&lt;option&gt;Eggplant&gt;/option&gt;</span>
+					<span>		&lt;option&gt;Potato&gt;/option&gt;</span>
+					<span>	&lt;/optgroup&gt;</span>
+					<span>&lt;/select&gt;</span>
+				</pre>
+			</details>
+
+
 			<select class="AJxSelect" multiple name="multi1" style="width: 150px; height: 180px">
 				<optgroup label="fruits">
 					<option>Banana</option>
@@ -909,322 +1036,369 @@
 				</optgroup>
 			</select>
 			<br>
-		
-		
-		
+
+
+
 			<h1 id="Input">Input</h1>
-			<pre class="Codex">
-				<span>&lt;label&gt;Text&lt;/label&gt;&lt;br&gt;</span>
-				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label&gt;Text&lt;/label&gt;&lt;br&gt;</span>
+					<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+				</pre>
+			</details>
+
 			<label>Text</label><br>
 			<input class="AJxInput" type=text \autofocus><br>
-		
-			<pre class="Codex">
-				<span>&lt;label&gt;Password&lt;/label&gt;&lt;br&gt;</span>
-				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label&gt;Password&lt;/label&gt;&lt;br&gt;</span>
+					<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+				</pre>
+			</details>
+
 			<label>Password</label><br>
 			<input class="AJxInput" type=password placeholder=password><br>
-		
-			<pre class="Codex">
-				<span>&lt;label&gt;Textarea&lt;/label&gt;&lt;br&gt;</span>
-				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label&gt;Textarea&lt;/label&gt;&lt;br&gt;</span>
+					<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+				</pre>
+			</details>
+
 			<label>Textarea</label><br>
 			<textarea class="AJxInput"></textarea><br>
-		
-			<pre class="Codex">
-				<span>&lt;label&gt;Number&lt;/label&gt;&lt;br&gt;</span>
-				<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
-			</pre>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;label&gt;Number&lt;/label&gt;&lt;br&gt;</span>
+					<span>&lt;input class="AJxInput" type=text \autofocus&gt;&lt;br&gt;</span>
+				</pre>
+			</details>
+
 			<label>Number</label><br>
 			<input class="AJxInput" type=number min=0 max=15 step=3><br>
-		
+
 			<br>
 
 
 		</article>
 	</section>
-	
 
-	
-
-
-	
-
-	
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-	<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-	<p><del>This line of text is meant to be treated as deleted text.</del></p>
-	<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-	<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-	<p><u>This line of text will render as underlined</u></p>
-	<p><small>This line of text is meant to be treated as fine print.</small></p>
-	<p><strong>This line rendered as bold text.</strong></p>
-	<p><em>This line rendered as italicized text.</em></p>
-
-
-	<hr>
-
-
-	<dl class="horizontal">
-		<dt>Description lists</dt>
-		<dd>A description list is perfect for defining terms.</dd>
-		<dt>Euismod</dt>
-		<dd>Vestibulum id ligula porta felis euismod semper.</dd>
-		<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-		<dt>Malesuada porta</dt>
-		<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-	</dl>
-
-
-	<hr>
-
-
-
-	<ul class="step-list">
-		<li>
-			<label>First step</label>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-				scrambled it to make a type specimen book.
-			</p>
-		</li>
-		<li>
-			<label>Second step</label>
-			<p>
-				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-				Latin literature from 45 BC, making it over 2000 years old.
-			</p>
-		</li>
-		<li>
-			<label>Third step</label>
-			<p>
-				There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-				alteration in some form, by injected humour, or randomised words which don't look even slightly
-				believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-				embarrassing hidden in the middle of text.
-			</p>
-		</li>
-		<li>
-			<label>4th step</label>
-			<p>
-				There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-				alteration in some form, by injected humour, or randomised words which don't look even slightly
-				believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-				embarrassing hidden in the middle of text.
-			</p>
-		</li>
-	</ul>
-
-
-	<hr>
-
-
-
-
-
-
-
-
-
-
-	<h2>Table</h2>
-
-	<table>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-			<th>Points</th>
-		</tr>
-		<tr>
-			<td>Jill</td>
-			<td>Smith</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-			<td>50</td>
-		</tr>
-		<tr>
-			<td>Eve</td>
-			<td>Jackson</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-			<td>94</td>
-		</tr>
-		<tr>
-			<td>Adam</td>
-			<td>Johnson</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-			<td>67</td>
-		</tr>
-	</table>
-
-
-
-
-
-
-
-	<h2>List</h2>
-	<ul>
-		<li>Coffee</li>
-		<li>Tea</li>
-		<li>Coca Cola</li>
-	</ul>
-
-
-
-
-
-
-	<h1>NONE NATIVE</h1>
-
-	<div class="spinner">
-		<div class="bounce1"></div>
-		<div class="bounce2"></div>
-		<div class="bounce3"></div>
-	</div>
-
-
-	<div class="sk-fading-circle">
-		<div class="sk-circle1 sk-circle"></div>
-		<div class="sk-circle2 sk-circle"></div>
-		<div class="sk-circle3 sk-circle"></div>
-		<div class="sk-circle4 sk-circle"></div>
-		<div class="sk-circle5 sk-circle"></div>
-		<div class="sk-circle6 sk-circle"></div>
-		<div class="sk-circle7 sk-circle"></div>
-		<div class="sk-circle8 sk-circle"></div>
-		<div class="sk-circle9 sk-circle"></div>
-		<div class="sk-circle10 sk-circle"></div>
-		<div class="sk-circle11 sk-circle"></div>
-		<div class="sk-circle12 sk-circle"></div>
-	</div>
-
-
-
-
-	<div class='loader'>
-		<div class='circle'></div>
-		<div class='circle'></div>
-		<div class='circle'></div>
-		<div class='circle'></div>
-		<div class='circle'></div>
-	</div>
-
-
-	<br><br><br>
-	<hr>
-
-
-
-
-
-	<h2>Tree View</h2>
-	<p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.</p>
-	<p>Click on the box(es) to open or close the tree branches.</p>
-
-	<ul class="AJxTreeView">
-		<!-- TOP -->
-
-		<li>OBJ1</li> <!-- OBJECT -->
-
-		<li><span class="treeViewBox">Beverages</span> <!-- SUB -->
-			<ul class="treeViewNested">
-				<!-- SUB CONTAINER -->
-				<li>Water</li> <!-- OBJECT -->
-				<li>Coffee</li> <!-- OBJECT -->
-				<li><span class="treeViewBox">Tea</span> <!-- SUB -->
-					<ul class="treeViewNested">
-						<!-- SUB CONTAINER -->
-						<li>Black Tea</li>
-						<li>White Tea</li>
-						<li><span class="treeViewBox">Green Tea</span>
-							<ul class="treeViewNested">
-								<li><button class="AJxButton">Button</button></li>
-								<li>Gyokuro</li>
-								<li>Matcha</li>
-								<li>Pi Lo Chun</li>
-							</ul>
-						</li>
-					</ul>
+<hr>
+
+	<section>
+		<h1 id="Typography">Typography</h1>
+		<p>Content of this section</p>
+		<article>
+			<h1>Fonts</h1>
+			<p>Standard: Google Roboto font family</p>
+			<pre class="Codex">
+				<span>html {</span>
+				<span>	font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;</span>
+				<span>}</span>
+			</pre>
+
+		</article>
+
+		<article>
+			<h1 id="Headers">Headers</h1>
+
+			<h1>Heading h1</h1><br>
+			<h2>Heading h2</h2><br>
+			<h3>Heading h3</h3><br>
+			<h4>Heading h4</h4><br>
+			<h5>Heading h5</h5><br>
+			<h6>Heading h6</h6><br>
+
+			<h1>Heading h1 <br><span>Sub title</span></h1><br>
+
+		</article>
+
+		<article>
+			<h1 id="Blockquotes">Blockquotes</h1>
+			<blockquote>
+				This is an example quotation that uses the blockquote tag.
+			</blockquote>
+		</article>
+
+		<article>
+			<h1 id="Format">Format</h1>
+			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+			<p><del>This line of text is meant to be treated as deleted text.</del></p>
+			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+			<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+			<p><u>This line of text will render as underlined</u></p>
+			<p><small>This line of text is meant to be treated as fine print.</small></p>
+			<p><strong>This line rendered as bold text.</strong></p>
+			<p><em>This line rendered as italicized text.</em></p>
+		</article>
+
+		<article>
+			<h1 id="DescriptionLists">Heading</h1>
+			<p>Content of this section</p>
+			<dl class="horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+		</article>
+	</section>
+
+
+
+
+
+
+
+	<section>
+		<h1>Heading</h1>
+		<p>Content of this section</p>
+		
+
+		<article id="StepList">
+			<ul class="step-list">
+				<li>
+					<label>First step</label>
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+						type and
+						scrambled it to make a type specimen book.
+					</p>
 				</li>
-				<li><span class="treeViewBox">Chokolade</span>
-					<ul class="treeViewNested">
-						<li>Black Tea</li>
-						<li>White Tea</li>
-						<li><span class="treeViewBox">Green Tea</span>
-							<ul class="treeViewNested">
-								<li><label class="AJxSwitch">
-										<input type="checkbox">
-										<span class="slider"></span>
-									</label> Some</li>
-								<li><label class="AJxSwitch">
-										<input type="checkbox">
-										<span class="slider"></span>
-									</label> Even More</li>
-								<li><label class="AJxSwitch">
-										<input type="checkbox">
-										<span class="slider"></span>
-									</label> Mammi</li>
-								<li><label class="AJxSwitch">
-										<input type="checkbox">
-										<span class="slider"></span>
-									</label> KAPPI</li>
-							</ul>
-						</li>
-					</ul>
+				<li>
+					<label>Second step</label>
+					<p>
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+						classical
+						Latin literature from 45 BC, making it over 2000 years old.
+					</p>
+				</li>
+				<li>
+					<label>Third step</label>
+					<p>
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+						alteration in some form, by injected humour, or randomised words which don't look even slightly
+						believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+						anything
+						embarrassing hidden in the middle of text.
+					</p>
+				</li>
+				<li>
+					<label>4th step</label>
+					<p>
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+						alteration in some form, by injected humour, or randomised words which don't look even slightly
+						believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+						anything
+						embarrassing hidden in the middle of text.
+					</p>
 				</li>
 			</ul>
-		</li>
+		</article>
 
-	</ul>
+		<article>
+			<h1 id="Table">Table</h1>
+
+			<table>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+					<th>Points</th>
+				</tr>
+				<tr>
+					<td>Jill</td>
+					<td>Smith</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Eve</td>
+					<td>Jackson</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+					<td>94</td>
+				</tr>
+				<tr>
+					<td>Adam</td>
+					<td>Johnson</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+					<td>67</td>
+				</tr>
+			</table>
+
+			<h1 id="List">List</h1>
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Coca Cola</li>
+			</ul>
+		</article>
+	</section>
+
+
+
+
+<hr>
+
+	<h1 id="NoneNative">NONE NATIVE</h1>
+
+
+	<section>
+		<h1>Heading</h1>
+		<p>Content of this section</p>
+		<article>
+			<h1>Heading</h1>
+			<p>Content of this section</p>
+			<div class="spinner">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+
+
+			<div class="sk-fading-circle">
+				<div class="sk-circle1 sk-circle"></div>
+				<div class="sk-circle2 sk-circle"></div>
+				<div class="sk-circle3 sk-circle"></div>
+				<div class="sk-circle4 sk-circle"></div>
+				<div class="sk-circle5 sk-circle"></div>
+				<div class="sk-circle6 sk-circle"></div>
+				<div class="sk-circle7 sk-circle"></div>
+				<div class="sk-circle8 sk-circle"></div>
+				<div class="sk-circle9 sk-circle"></div>
+				<div class="sk-circle10 sk-circle"></div>
+				<div class="sk-circle11 sk-circle"></div>
+				<div class="sk-circle12 sk-circle"></div>
+			</div>
+
+
+
+
+			<div class='loader'>
+				<div class='circle'></div>
+				<div class='circle'></div>
+				<div class='circle'></div>
+				<div class='circle'></div>
+				<div class='circle'></div>
+			</div>
+		</article>
+	</section>
+
+
+	<section>
+		<h1>Heading</h1>
+		<p>Content of this section</p>
+		<article>
+			<h1>Heading</h1>
+			<p>Content of this section</p>
+
+			<h2>Tree View</h2>
+			<p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.
+			</p>
+			<p>Click on the box(es) to open or close the tree branches.</p>
+
+			<ul class="AJxTreeView">
+				<!-- TOP -->
+
+				<li>OBJ1</li> <!-- OBJECT -->
+
+				<li><span class="treeViewBox">Beverages</span> <!-- SUB -->
+					<ul class="treeViewNested">
+						<!-- SUB CONTAINER -->
+						<li>Water</li> <!-- OBJECT -->
+						<li>Coffee</li> <!-- OBJECT -->
+						<li><span class="treeViewBox">Tea</span> <!-- SUB -->
+							<ul class="treeViewNested">
+								<!-- SUB CONTAINER -->
+								<li>Black Tea</li>
+								<li>White Tea</li>
+								<li><span class="treeViewBox">Green Tea</span>
+									<ul class="treeViewNested">
+										<li><button class="AJxButton">Button</button></li>
+										<li>Gyokuro</li>
+										<li>Matcha</li>
+										<li>Pi Lo Chun</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><span class="treeViewBox">Chokolade</span>
+							<ul class="treeViewNested">
+								<li>Black Tea</li>
+								<li>White Tea</li>
+								<li><span class="treeViewBox">Green Tea</span>
+									<ul class="treeViewNested">
+										<li><label class="AJxSwitch">
+												<input type="checkbox">
+												<span class="slider"></span>
+											</label> Some</li>
+										<li><label class="AJxSwitch">
+												<input type="checkbox">
+												<span class="slider"></span>
+											</label> Even More</li>
+										<li><label class="AJxSwitch">
+												<input type="checkbox">
+												<span class="slider"></span>
+											</label> Mammi</li>
+										<li><label class="AJxSwitch">
+												<input type="checkbox">
+												<span class="slider"></span>
+											</label> KAPPI</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</article>
+	</section>
+
+
+
+
 
 
 	<br><br><br><br><br>
