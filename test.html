@@ -42,6 +42,8 @@
 		.sider a:hover {
 			font-weight: bold;
 		}
+
+
 	</style>
 
 	<div class="sider">
@@ -82,9 +84,9 @@
 	<h1 id="AJxUI">AJxUI</h1>
 	<p>The UI with a great taste!</p>
 	<section>
-		<h1 id="ContentOnThisPage">Content on this page</h1>
+		<h2 id="ContentOnThisPage">Content on this page</h2>
 		<article>
-			<h1 id="SectionTag">Section tag</h1>
+			<h3 id="SectionTag">Section tag</h3>
 			<p>New Content section to use</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -115,7 +117,30 @@
 		</article>
 
 		<article>
-			<h1 id="CodeBlock">Code Block</h1>
+			<h3 id="CodeAccordion">Code Accordion</h3>
+			<p></p>
+			<!-- DETAILS -->
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;details class="AJxDetails"&gt;</span>
+					<span>	&lt;summary&gt; See code &lt;/summary&gt;</span>
+					<span></span>
+					<span>&lt;/details&gt;</span>
+				</pre>
+			</details>
+			<!-- GET CODE -->
+			<textarea id="1567341023387" style="display: none">
+<details class="AJxDetails">
+	<summary> See code </summary>
+
+</details>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567341023387')"> Copy snippet </button>
+		</article>
+
+		<article>
+			<h3 id="CodeBlock">Code Block</h3>
 			<p>The visual code block</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -136,7 +161,7 @@
 		</article>
 
 		<article>
-			<h1 id="GetCode">Get code</h1>
+			<h3 id="GetCode">Get code</h3>
 			<p>Add a button to copy code</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -176,28 +201,7 @@
 			</script>
 		</article>
 
-		<article>
-			<h1 id="CodeAccordion">Code Accordion</h1>
-			<p></p>
-			<!-- DETAILS -->
-			<details class="AJxDetails">
-				<summary> See code </summary>
-				<pre class="Codex">
-					<span>&lt;details class="AJxDetails"&gt;</span>
-					<span>	&lt;summary&gt; See code &lt;/summary&gt;</span>
-					<span></span>
-					<span>&lt;/details&gt;</span>
-				</pre>
-			</details>
-			<!-- GET CODE -->
-			<textarea id="1567341023387" style="display: none">
-<details class="AJxDetails">
-	<summary> See code </summary>
 
-</details>
-			</textarea>
-			<button class="AJxButton" onclick="copyText('1567341023387')"> Copy snippet </button>
-		</article>
 
 	</section>
 	<br><br>
@@ -382,12 +386,12 @@
 
 
 	<section>
-		<h1 id="NotificationSystem">Notification System</h1>
+		<h2 id="NotificationSystem">Notification System</h2>
 		<p> Show a stack of notifications in the top right <br>
 			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
 		<article>
-			<h1>Call function</h1>
+			<h3>Call function</h3>
 			<p>Use <b>text</b> for the message, <b>time</b> is the time it shows, <b>bgcolor</b> is the background
 				color, <b>txcolor</b> is the text color!</p>
 			<p>Use time "0" for a constant message, click is required to close that notification.</p>
@@ -398,7 +402,6 @@
 			<button class="AJxButton" onclick="copyText('1567203445373')"> COPY ALL </button>
 		</article>
 		<article>
-			<h1>DEMO</h1>
 			<Button class="AJxButton"
 				onclick="notix('This is a DEMO text, it disappears in 3 seconds', 3000, 'red', 'yellow')">3000, red,
 				yellow</Button>
@@ -410,7 +413,7 @@
 	<hr>
 
 	<section>
-		<h1 id="AccordionWithSymbols">Accordion with symbols</h1>
+		<h2 id="AccordionWithSymbols">Accordion with symbols</h2>
 		<p>Slim accordions for use<br>
 			<span class="require">Require the Javascript & CSS Framework</span><br>
 		</p>
@@ -437,7 +440,6 @@
 		</article>
 
 		<article>
-			<h1>DEMO</h1>
 			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 1</button>
 			<div class="panel">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -470,25 +472,25 @@
 	<hr>
 
 	<section>
-		<h1 id="FormElements">Form elements</h1>
+		<h2 id="FormElements">Form elements</h2>
 		<article>
-			<h1 id="SolidButtons">Solid Buttons</h1>
+			<h3 id="SolidButtons">Solid Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
 					<span>&lt;button&gt;Button&lt;/button&gt;</span>
 					<span></span>
 					<span>&lt;button class="AJxButton"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class=" AJxButton large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
 					<span>&lt;button class="AJxButton" disabled&gt;Button&lt;/button&gt;</span>
 					<span></span>
 					<span>&lt;button class="AJxButton red"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class=" AJxButton red large" disabled&gt;Button Large&lt;/button&gt;</span>
-					<span>&lt;button class="AJxButton" red disabled&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton red large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton" red disabled&gt;Button&lt;/button Disabled&gt;</span>
 					<span></span>
 					<span>&lt;button class="AJxButton green"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class=" AJxButton green large" disabled&gt;Button Large&lt;/button&gt;</span>
-					<span>&lt;button class="AJxButton" green disabled&gt;Button&lt;/button&gt;</span>
+					<span>&lt;button class=" AJxButton green large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton" green disabled&gt;Button&lt;/button Disabled&gt;</span>
 				</pre>
 			</details>
 
@@ -496,55 +498,55 @@
 			<br>
 			<button class="AJxButton">Button</button>
 			<button class=" AJxButton large">Button Large</button>
-			<button class=" AJxButton large" disabled>Button Large</button>
-			<button class="AJxButton" disabled>Button</button>
+			<button class=" AJxButton large" disabled>Button Large Disabled</button>
+			<button class="AJxButton" disabled>Button Disabled</button>
 			<br>
 
 			<button class="AJxButton red">Button</button>
 			<button class=" AJxButton red large">Button Large</button>
-			<button class=" AJxButton red large" disabled>Button Large</button>
-			<button class="AJxButton red" disabled>Button</button>
+			<button class=" AJxButton red large" disabled>Button Large Disabled</button>
+			<button class="AJxButton red" disabled>Button Disabled</button>
 			<br>
 			<button class="AJxButton green">Button</button>
 			<button class=" AJxButton green large">Button Large</button>
-			<button class=" AJxButton green large" disabled>Button Large</button>
-			<button class="AJxButton green" disabled>Button</button>
+			<button class=" AJxButton green large" disabled>Button Large Disabled</button>
+			<button class="AJxButton green" disabled>Button Disabled</button>
 			<br>
 
 
 
 			<br>
-			<h1>Flat buttons</h1>
+			<h3>Flat buttons</h3>
 
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
 					<span>&lt;button class="AJxButton flat"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton flat large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
 					<span></span>
 					<span>&lt;button class="AJxButton red flat"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class="AJxButton red flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton red flat large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
 					<span></span>
 					<span>&lt;button class="AJxButton green flat"&gt;Button&lt;/button&gt;</span>
-					<span>&lt;button class="AJxButton green flat large" disabled&gt;Button Large&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton green flat large" disabled&gt;Button Large Disabled&lt;/button&gt;</span>
 				</pre>
 			</details>
 
 
 
 			<button class="AJxButton flat">Button</button>
-			<button class="AJxButton flat large" disabled>Button</button>
+			<button class="AJxButton flat large" disabled>Button Large Disabled</button>
 			<br>
 			<button class="AJxButton red flat">Button</button>
-			<button class="AJxButton red flat large" disabled>Button</button>
+			<button class="AJxButton red flat large" disabled>Button Large Disabled</button>
 			<br>
 			<button class="AJxButton green flat">Button</button>
-			<button class="AJxButton green flat large" disabled>Button</button>
+			<button class="AJxButton green flat large" disabled>Button Large Disabled</button>
 
 
 
 			<br><br>
-			<h1>Special Buttons</h1>
+			<h3>Special Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -565,17 +567,17 @@
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
-					<span>&lt;button class="AJxButton_SP02"&gt;&lt;span&gt;Hover &lt;/span&gt;&lt;/button&gt;</span>
+					<span>&lt;button class="AJxButton_SP02" style="width: 150px;"&gt;&lt;span&gt;Hover &lt;/span&gt;&lt;/button&gt;</span>
 				</pre>
 			</details>
 
-			<button class="AJxButton_SP02"><span>Hover </span></button>
+			<button class="AJxButton_SP02" style="width: 150px;"><span>Hover Mover </span></button>
 			<br>
 
 
 			<br>
 			<br>
-			<h1>Tab buttons</h1>
+			<h3>Tab buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -597,7 +599,7 @@
 
 
 
-			<h1>Button with Icons</h1>
+			<h3>Button with Icons</h3>
 			<p>Font awesome Icon
 				<br><span class="require">Require the Font awesome Framework</span><br>
 				<a href="https://fontawesome.com/" style="font-size: 10px">Font Awesome Homepage</a>
@@ -650,7 +652,7 @@
 
 			<br>
 			<br>
-			<h1 id="ToggleSwitch">Toggle Switch</h1>
+			<h3 id="ToggleSwitch">Toggle Switch</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -772,7 +774,7 @@
 
 
 
-			<h1 id="CustomCheckboxes">Custom Checkboxes</h1>
+			<h3 id="CustomCheckboxes">Custom Checkboxes</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -819,7 +821,7 @@
 
 
 
-			<h1 id="CustomRadioButtons">Custom Radio Buttons</h1>
+			<h3 id="CustomRadioButtons">Custom Radio Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -863,7 +865,7 @@
 
 
 			<br>
-			<h1 id="DragRange">Drag Range</h1>
+			<h3 id="DragRange">Drag Range</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -889,7 +891,7 @@
 
 
 			<br>
-			<h1 id="Progress">Progress</h1>
+			<h3 id="Progress">Progress</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -907,7 +909,7 @@
 
 
 			<br>
-			<h1 id="Select">Select</h1>
+			<h3 id="Select">Select</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -982,7 +984,7 @@
 
 
 			<br>
-			<h1>Multi Select</h1>
+			<h3>Multi Select</h3>
 
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -1039,7 +1041,7 @@
 
 
 
-			<h1 id="Input">Input</h1>
+			<h3 id="Input">Input</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -1090,10 +1092,9 @@
 <hr>
 
 	<section>
-		<h1 id="Typography">Typography</h1>
-		<p>Content of this section</p>
+		<h2 id="Typography">Typography</h2>
 		<article>
-			<h1>Fonts</h1>
+			<h3>Fonts</h3>
 			<p>Standard: Google Roboto font family</p>
 			<pre class="Codex">
 				<span>html {</span>
@@ -1104,28 +1105,38 @@
 		</article>
 
 		<article>
-			<h1 id="Headers">Headers</h1>
+			<h3 id="Headers">Headers</h3>
 
-			<h1>Heading h1</h1><br>
-			<h2>Heading h2</h2><br>
-			<h3>Heading h3</h3><br>
-			<h4>Heading h4</h4><br>
-			<h5>Heading h5</h5><br>
-			<h6>Heading h6</h6><br>
+			<h1>Heading h1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-			<h1>Heading h1 <br><span>Sub title</span></h1><br>
+			<h2>Heading h2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<h3>Heading h3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<h4>Heading h4</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<h5>Heading h5</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<h6>Heading h6</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 
 		</article>
 
 		<article>
-			<h1 id="Blockquotes">Blockquotes</h1>
+			<h3 id="Blockquotes">Blockquotes</h3>
 			<blockquote>
 				This is an example quotation that uses the blockquote tag.
 			</blockquote>
 		</article>
 
 		<article>
-			<h1 id="Format">Format</h1>
+			<h3 id="Format">Format</h3>
 			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
 			<p><del>This line of text is meant to be treated as deleted text.</del></p>
 			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -1134,20 +1145,6 @@
 			<p><small>This line of text is meant to be treated as fine print.</small></p>
 			<p><strong>This line rendered as bold text.</strong></p>
 			<p><em>This line rendered as italicized text.</em></p>
-		</article>
-
-		<article>
-			<h1 id="DescriptionLists">Heading</h1>
-			<p>Content of this section</p>
-			<dl class="horizontal">
-				<dt>Description lists</dt>
-				<dd>A description list is perfect for defining terms.</dd>
-				<dt>Euismod</dt>
-				<dd>Vestibulum id ligula porta felis euismod semper.</dd>
-				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-				<dt>Malesuada porta</dt>
-				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-			</dl>
 		</article>
 	</section>
 
@@ -1158,11 +1155,80 @@
 
 
 	<section>
-		<h1>Heading</h1>
-		<p>Content of this section</p>
+		<h2>Lists</h2>		
+		<article>
+			<h3 id="DescriptionLists">Description Lists</h3>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;dl class="horizontal"&gt;</span>
+					<span>	&lt;dt&gt;Description lists&lt;/dt&gt;</span>
+					<span>	&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;</span>
+					<span>	&lt;dt&gt;Euismod&lt;/dt&gt;</span>
+					<span>	&lt;dd&gt;Vestibulum id ligula porta felis euismod semper.&lt;/dd&gt;</span>
+					<span>	&lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;</span>
+					<span>	&lt;dt&gt;Malesuada porta&lt;/dt&gt;</span>
+					<span>	&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;</span>
+					<span>&lt;/dl&gt;</span>
+				</pre>
+			</details>
+						
+			
+			<textarea id="1567366365922" style="display: none">
+<dl class="horizontal">
+	<dt>Description lists</dt>
+	<dd>A description list is perfect for defining terms.</dd>
+	<dt>Euismod</dt>
+	<dd>Vestibulum id ligula porta felis euismod semper.</dd>
+	<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+	<dt>Malesuada porta</dt>
+	<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567366365922')"> Copy snippet </button>
+			<dl class="horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+		</article>
 		
-
 		<article id="StepList">
+			<h3>Step List</h3>
+			<details class="AJxDetails">
+				<summary> See code </summary>
+				<pre class="Codex">
+					<span>&lt;ul class="step-list"&gt;</span>
+					<span>	&lt;li&gt;</span>
+					<span>		&lt;label&gt;Second one&lt;/label&gt;</span>
+					<span>		&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of&lt;/p&gt;</span>
+					<span>	&lt;/li&gt;</span>
+					<span>	&lt;li&gt;</span>
+					<span>		&lt;label&gt;Second step&lt;/label&gt;</span>
+					<span>		&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of&lt;/p&gt;</span>
+					<span>	&lt;/li&gt;</span>
+					<span>&lt;/ul&gt;</span>
+				</pre>
+			</details>
+			
+			<textarea id="1567366931309" style="display: none">
+<ul class="step-list">
+	<li>
+		<label>First step</label>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+	</li>
+	<li>
+		<label>First Second</label>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+	</li>
+</ul>
+			</textarea>
+			<button class="AJxButton" onclick="copyText('1567366931309')"> COPY ALL </button>
+			
 			<ul class="step-list">
 				<li>
 					<label>First step</label>
@@ -1206,7 +1272,7 @@
 		</article>
 
 		<article>
-			<h1 id="Table">Table</h1>
+			<h3 id="Table">Table</h3>
 
 			<table>
 				<tr>
@@ -1267,7 +1333,7 @@
 				</tr>
 			</table>
 
-			<h1 id="List">List</h1>
+			<h3 id="List">List</h3>
 			<ul>
 				<li>Coffee</li>
 				<li>Tea</li>
@@ -1285,11 +1351,8 @@
 
 
 	<section>
-		<h1>Heading</h1>
-		<p>Content of this section</p>
+		<h2>Loaders</h2>
 		<article>
-			<h1>Heading</h1>
-			<p>Content of this section</p>
 			<div class="spinner">
 				<div class="bounce1"></div>
 				<div class="bounce2"></div>
@@ -1327,17 +1390,11 @@
 
 
 	<section>
-		<h1>Heading</h1>
-		<p>Content of this section</p>
-		<article>
-			<h1>Heading</h1>
-			<p>Content of this section</p>
-
-			<h2>Tree View</h2>
-			<p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.
+		<h2>Tree View</h2>
+		<p>A tree view represents a hierarchical view of information, where each item can have a number of subitems.
 			</p>
 			<p>Click on the box(es) to open or close the tree branches.</p>
-
+		<article>
 			<ul class="AJxTreeView">
 				<!-- TOP -->
 
@@ -1410,3 +1467,4 @@
 </body>
 
 </html>
+

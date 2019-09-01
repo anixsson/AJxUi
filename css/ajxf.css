@@ -6,7 +6,10 @@
 /*#  /_/  |_|\____//_/|_|/____/ \__, //____/ \__/ \___//_/ /_/ /_//____/   */
 /*#                            /____/                                      */
 
-
+* {
+	margin: 0px;
+	padding: 0px;
+}
 
 
 html {
@@ -18,16 +21,13 @@ body {
 }
 
 section {
+	margin: 30px 0px;
 	text-align: left;
-	display: inline-block
+	display: inline-block;
 }
 
 article {
-	margin-top: 40px;
-}
-
-article h1 {
-	line-height: 0;
+	margin: 15px 0px;
 }
 
 
@@ -37,8 +37,46 @@ article h1 {
 
 
 
+h1 {
+	font-size: 40px;
+	line-height: 80px;
+	margin-top: 10px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 50px;
+	margin-top: 10px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 5px;
+}
+h5 {
+	font-size: 15px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 5px;
+}
 
+p {
+	margin: 5px 0px;
+}
 
+blockquote {
+	border-left: solid 3px rgb(111, 124, 128);
+	margin: 10px 10px;
+	padding-left: 10px;
+}
 
 
 
@@ -758,7 +796,7 @@ article h1 {
 	transition: all 0.5s;
 	margin: 5px;
 	display: inline-block;
-	width: 100px;
+	width: auto;
 	color: white;
 	cursor: pointer;
 	user-select: none;
@@ -1266,6 +1304,7 @@ ul {
 	box-shadow: .1em .1em .5em rgba(0,0,0,.45);
 	line-height: 0;
 	counter-reset: line;
+	margin: 10px 0px;
   }
 .Codex span {
 	display: block;
@@ -1289,7 +1328,7 @@ ul {
 
 
 .AJxDetails {
-	margin-bottom: 10px;
+	margin: 10px 0px;
 }
 
 .AJxDetails summary {
@@ -1297,6 +1336,7 @@ ul {
 	outline: none;
 	user-select: none;
 	font-size: 13px;
+	margin: 10px 0px;
 }
 
 
