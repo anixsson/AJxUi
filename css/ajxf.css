@@ -6,8 +6,10 @@
 /*#  /_/  |_|\____//_/|_|/____/ \__, //____/ \__/ \___//_/ /_/ /_//____/   */
 /*#                            /____/                                      */
 
-
-
+* {
+	margin: 0px;
+	padding: 0px;
+}
 
 html {
 	font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
@@ -17,6 +19,15 @@ body {
 	background-color: #ffffff;
 }
 
+section {
+	margin: 30px 0px;
+	text-align: left;
+	display: inline-block;
+}
+
+article {
+	margin: 15px 0px;
+}
 
 
 
@@ -25,10 +36,46 @@ body {
 
 
 
+h1 {
+	font-size: 40px;
+	line-height: 80px;
+	margin-top: 10px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 50px;
+	margin-top: 10px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 5px;
+}
+h5 {
+	font-size: 15px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 5px;
+}
 
+p {
+	margin: 5px 0px;
+}
 
-
-
+blockquote {
+	border-left: solid 3px rgb(111, 124, 128);
+	margin: 10px 10px;
+	padding-left: 10px;
+}
 
 
 
@@ -748,13 +795,14 @@ body {
 	transition: all 0.5s;
 	margin: 5px;
 	display: inline-block;
-	width: 100px;
+	width: auto;
 	color: white;
 	cursor: pointer;
 	user-select: none;
 	background-color:#0078d7;
 	font-weight: lighter;
 	border:0px solid #0078d7;
+	border-radius: 0px;
 }
 .AJxButton_SP02:hover {
 	background-color:#2488d8;
@@ -859,6 +907,7 @@ body {
 	outline: none;
 	font-size: 12px;
 	transition: 0.2s;
+	border-radius: 0px;
 }
 
 .active, .AJxAccordion:hover {
@@ -938,7 +987,7 @@ body {
 	width: 100%;
 	height: 3px;
 	cursor: pointer;
-	animate: 0.2s;
+	animation: 0.2s;
 	box-shadow: 0px 0px 0px #000000;
 	background: #0078d7;
 	border-radius: 0px;
@@ -977,13 +1026,14 @@ body {
 	margin-bottom: 15px;
 	width: 100%;
 	overflow-y: auto;
+	border-radius: 0px;
 }
 .AJxSelect select {
 	 font-family: 'Arial';
 	 display: inline-block;
 	 width: 100%;
 	 cursor: pointer;
-	 padding: 0px 6px;
+	 padding: 2px 6px;
 	 outline: 0;
 	 border: 0px solid #3173a0;
 	 border-radius: 0px;
@@ -1002,6 +1052,7 @@ body {
 	background: #eeeeee;
 	box-shadow: 0 0 0 #0078d7;
 	outline: none;
+	border-radius: 0px;
 }
 .AJxSelect select:disabled {
 	opacity: 0.5;
@@ -1009,7 +1060,7 @@ body {
 }
 .AJxSelect_arrow {
 	position: absolute;
-	top: 9px;
+	top: 7px;
 	right: 6px;
 	pointer-events: none;
 	border-style: solid;
@@ -1071,6 +1122,7 @@ dl.horizontal dd {
 	display: inline-block;
 	border: none;
 	background: #eaeaea;
+	border-radius: 0px;
 }
 
 .AJxInput:focus {
@@ -1100,7 +1152,7 @@ dl.horizontal dd {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 20px;
 }
 
 /* Track */
@@ -1237,6 +1289,74 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 ul {
 	font-size: 12px;
 }
+
+
+
+
+
+.Codex, pre {
+	font-family: monospace;
+	background-color: #fff;
+	width: em(440);
+	padding: 0.5em;
+	border-radius: .25em;
+	box-shadow: .1em .1em .5em rgba(0,0,0,.45);
+	line-height: 0;
+	counter-reset: line;
+	margin: 10px 0px;
+  }
+.Codex span {
+	display: block;
+	line-height: 1.5rem;
+}
+.Codex span:before {
+	counter-increment: line;
+	content: counter(line);
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	padding: 0 .5em;
+	margin-right: .5em;
+	color: #888
+}
+
+
+
+
+
+
+
+
+.AJxDetails {
+	margin: 10px 0px;
+}
+
+.AJxDetails summary {
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	font-size: 13px;
+	margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1718,7 +1838,14 @@ ul {
 
 
 
+/* 
+	Notification system
+*/
 
+.notix {
+	background-color: #000000;
+	cursor: pointer;
+}
 
 
 
