@@ -1152,7 +1152,7 @@ dl.horizontal dd {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 20px;
+	width: 8px;
 }
 
 /* Track */
