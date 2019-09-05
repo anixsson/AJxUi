@@ -736,6 +736,156 @@ blockquote {
 
 /*GREEN BUTTON END*/
 
+/*BLACK BUTTON START*/
+
+.AJxButton.black.large {
+	padding: 6px 13px;
+}
+.AJxButton.black {
+	background-color: #333333;
+	border:0px solid #333333;
+	color: #ffffff;
+	font-size:12px;
+	padding:3px 8px;
+	text-decoration:none;
+	cursor: pointer;
+}
+.AJxButton.black:hover {
+	background-color: #5e5e5e;
+}
+
+.AJxButton.black:active {
+	text-shadow: 0px -1px #727272;
+	background-color: #2e2e2e;
+}
+
+.AJxButton.black:focus {
+	box-shadow: 0 0 0 #333333;
+	outline: none;
+}
+
+.AJxButton.black:disabled{
+	background-color: #c2c2c2;
+	border: 0px solid #c2c2c2;
+}
+.AJxButton.black i{
+	margin-right: 1px;
+}
+
+
+.AJxButton.black.flat.large {
+	padding: 6px 17px;
+}
+.AJxButton.black.flat {
+	background-color: rgba(255, 255, 255, 0);
+	border:1px solid #333333;
+	color: #333333;
+	font-size:12px;
+	padding:2px 7px;
+	text-decoration:none;
+	cursor: pointer;
+}
+.AJxButton.black.flat:hover {
+	border:1px solid #808080;
+	color: #808080;
+}
+
+.AJxButton.black.flat:active {
+	border:1px solid #c5c5c5;
+	color: #c5c5c5;
+	text-shadow: 0px 0px rgba(255, 255, 255, 0);
+}
+
+.AJxButton.black.flat:focus {
+	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
+	outline: none;
+}
+
+.AJxButton.black.flat:disabled{
+	border:1px solid #c5c5c5;
+	color: #c5c5c5;
+}
+.AJxButton.black.flat i{
+	margin-right: 1px;
+}
+
+/*BLACK BUTTON END*/
+
+/*WHITE BUTTON START*/
+
+.AJxButton.white.large {
+	padding: 6px 13px;
+}
+.AJxButton.white {
+	background-color: #e6e6e6;
+	border:0px solid #e2e2e2;
+	color: #1d1d1d;
+	font-size:12px;
+	padding:3px 8px;
+	text-decoration:none;
+	cursor: pointer;
+}
+.AJxButton.white:hover {
+	background-color: #d8d8d8;
+}
+
+.AJxButton.white:active {
+	text-shadow: 0px 1px #c5c5c5;
+	background-color: #c2c2c2;
+}
+
+.AJxButton.white:focus {
+	box-shadow: 0 0 0 #c2c2c2;
+	outline: none;
+}
+
+.AJxButton.white:disabled{
+	background-color: #ebebeb;
+	color: rgb(185, 185, 185);
+	border: 0px solid #c2c2c2;
+}
+.AJxButton.white i{
+	margin-right: 1px;
+}
+
+
+.AJxButton.white.flat.large {
+	padding: 6px 17px;
+}
+.AJxButton.white.flat {
+	background-color: rgba(218, 218, 218, 0);
+	border:1px solid #dadada;
+	color: #dadada;
+	font-size:12px;
+	padding:2px 7px;
+	text-decoration:none;
+	cursor: pointer;
+}
+.AJxButton.white.flat:hover {
+	border:1px solid #9c9c9c;
+	color: #949494;
+}
+
+.AJxButton.white.flat:active {
+	border:1px solid #727272;
+	color: #777777;
+	text-shadow: 0px 0px rgba(255, 255, 255, 0);
+}
+
+.AJxButton.white.flat:focus {
+	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
+	outline: none;
+}
+
+.AJxButton.white.flat:disabled{
+	border:1px solid #e0e0e0;
+	color: #b4b4b4;
+}
+.AJxButton.white.flat i{
+	margin-right: 1px;
+}
+
+/*WHITE BUTTON END*/
 
 
 .AJxButton_SP01 {
