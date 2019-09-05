@@ -349,9 +349,9 @@ blockquote {
 	display: block;
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 12px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -432,12 +432,13 @@ blockquote {
 
 /* AJxRadio */
 .AJxRadio {
+	
 	display: block;
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	cursor: pointer;
-	font-size: 1px;
+	font-size: 12px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
