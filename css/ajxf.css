@@ -1150,8 +1150,9 @@ textarea.LineInput {
 	background: none !important;
 }
 
-.LineInput.LineInput:focus {
+textarea.LineInput:focus {
 	border-bottom: none !important;
+	border-left: 2px solid rgba(20, 20, 20, 0.7) !important;
 	outline: none;
 }
 
