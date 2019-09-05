@@ -349,7 +349,7 @@ blockquote {
 	display: block;
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 12px;
+	margin-bottom: 1px;
 	cursor: pointer;
 	font-size: 13px;
 	-webkit-user-select: none;
@@ -435,9 +435,9 @@ blockquote {
 	display: block;
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 1px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -976,7 +976,6 @@ blockquote {
 .AJxRange {
 	height: 27px;
 	-webkit-appearance: none;
-	margin: 10px 0;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0);
 }
@@ -1023,7 +1022,6 @@ blockquote {
 .AJxSelect {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 15px;
 	width: 100%;
 	overflow-y: auto;
 	border-radius: 0px;
@@ -1118,7 +1116,7 @@ dl.horizontal dd {
 	font-family: Consolas, serif;
 	width: auto;
 	padding: 5px;
-	margin: 5px 0 22px 0;
+	margin: 5px;
 	display: inline-block;
 	border: none;
 	background: #eaeaea;
