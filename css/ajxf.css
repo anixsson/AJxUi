@@ -35,7 +35,6 @@ article {
 
 
 
-
 h1 {
 	font-size: 40px;
 	line-height: 80px;
@@ -1264,7 +1263,7 @@ dl.horizontal dd {
 
 
 .AJxInput {
-	font-family: Consolas, serif;
+	font-family: "Courier New";
 	width: auto;
 	padding: 5px;
 	margin: 5px;
@@ -1459,7 +1458,59 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 ul {
 	font-size: 12px;
+	list-style-type: square;
 }
+ul ul {
+	margin-left: 16px;
+}
+li {
+	margin-left: 16px;
+}
+
+
+
+
+
+
+
+
+table.slim {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	font-size:12px;
+	width:100%;
+}
+
+table.slim tr td {
+	border: 1px solid #ddd;
+   padding: 0 15px;
+ }
+
+ table.slim tr th {
+	border: 1px solid #ddd;
+   padding: 0 10px;
+ }
+
+table.slim tr td {
+  white-space: nowrap;
+}
+
+table.slim tr:nth-child(even){background-color: #f2f2f2;}
+
+table.slim tr:hover {background-color: #ddd;}
+
+table.slim th {
+text-align: left;
+background-color: rgb(84, 150, 194);
+color: white;
+font-weight: normal;
+}
+
+
+
+
+
+
 
 
 
