@@ -21,7 +21,6 @@ body {
 }
 
 section {
-	background-color: #002050;
 	margin: 50px 0px;
 	text-align: left;
 	display: inline-block;
@@ -30,9 +29,9 @@ section {
 }
 
 article {
-	background-color: #006b24;
 	width: 100%;
 	margin: 15px 0px;
+	padding: 10px;
 }
 
 
