@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+    text-align: left;
+    padding: 0cm;
+    height: 255mm;
+}
+
+.pageHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: left;
+    padding: 0cm;
+    height: 15mm;
+    overflow: hidden;
+}
+
+.pageHeader img {
+    float: right;
+    height: 8mm;
+}
+
+.pageFooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding: 0cm;
+    height: 4mm;
+    overflow: hidden;
+}
+
+.pageCopyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: fixed;
+    right: 0.7cm;
+    bottom: 1cm;
+    width: 0.1cm;
+}
+
+.pageCopyright div {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right top;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: right top;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: right top;
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: right top;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+
+    text-align: left;
+    white-space: nowrap; 
+}
+
+section {
+    padding: 0px !important;
+}
+
+.toolPallet {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+    .subpage {
+        border: none;
+    }
+    
+    .pageHeader {
+        border: none;
+    }
+
+    .pageFooter {
+
+        border: none;
+    }
+    .toolPallet {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FlightPlan</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/frameworks/AJxUi/css/ajxf.css">
+		<link rel="stylesheet" href="assets/css/print.css">
+	</head>
+	<body>
+		<div class="toolPallet">
+			<button onclick="print()">PRINT</button>
+			<button>Button 1</button>
+			<button>Button 2</button>
+			<button>Button 3</button>
+		</div>
+		<div class="pageCopyright">
+			<div>This is some text with text on the right!</div>
+		</div>
+		<div class="book">
+			<div class="page">
+				<div class="pageHeader">
+					<img src="../pic/ajxsystems2.png" alt="">
+					HELLOx1 <br>
+					HELLOx2 <br>
+					HELLOx3 <br>
+				</div>
+				<div class="subpage">
+					<h1>Hello</h1>
+					
+				</div>
+				<div class="pageFooter">
+					Page 1/2
+				</div>
+			</div>
+			<div class="page">
+				<div class="pageHeader">
+					<img src="../pic/ajxsystems2.png" alt="">
+					HELLOx1 <br>
+					HELLOx2 <br>
+					HELLOx3 <br>
+				</div>
+				<div class="subpage">
+					TEXT
+				</div>
+				<div class="pageFooter">
+					Page 1/2
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="assets/frameworks/AJxUi/js/ajxf.js"></script>
+</html> */

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/ajxf.css">
+	<link rel="stylesheet" href="css/ajxui.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -81,11 +81,25 @@
 	========================================================================-->
 
 	<h1 id="AJxUI">AJxUI</h1>
-	<p>The UI with a great taste!</p>
+	<p>The UI for a simple interface!</p>
 	<section>
-		<h2 id="ContentOnThisPage">Content on this page</h2>
+		<h1>Goal</h1>
+		<p>The goal for AJxUI is to create a simple, minimalist and dynamic UI component system, built mainly with CSS with addition of Javascript and external Icons from Font Awesome.</p>
+
+		<h1>How to use</h1>
+		<p>
+			Source files
+			<ul>
+				<li><a href="css/ajxui.css" download>css/ajxui.css</a></li>
+				<li><a href="fonts/RobotoFonts.7z" download>fonts/</a></li>
+				<li><a href="js/ajxui.js" download>js/ajxui.js</a></li>
+			</ul>
+		</p>
+	</section>
+	<section>
+		<h1 id="ContentOnThisPage">Content to use on this page</h1>
 		<article>
-			<h3 id="SectionTag">Section tag</h3>
+			<h1 id="SectionTag">Section tag</h1>
 			<p>New Content section to use</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -101,7 +115,7 @@
 					<span>&lt;/section&gt;</span>
 				</pre>
 			</details>
-			<!-- GET CODE -->
+<!-- GET CODE -->
 			<textarea id="19083019561" style="display: none">
 <section>
 	<h1>Heading</h1>
@@ -116,7 +130,7 @@
 		</article>
 
 		<article>
-			<h3 id="CodeAccordion">Code Accordion</h3>
+			<h1 id="CodeAccordion">Code Accordion</h1>
 			<p></p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -128,7 +142,7 @@
 					<span>&lt;/details&gt;</span>
 				</pre>
 			</details>
-			<!-- GET CODE -->
+<!-- GET CODE -->
 			<textarea id="1567341023387" style="display: none">
 <details class="AJxDetails">
 	<summary> See code </summary>
@@ -139,7 +153,7 @@
 		</article>
 
 		<article>
-			<h3 id="CodeBlock">Code Block</h3>
+			<h1 id="CodeBlock">Code Block</h1>
 			<p>The visual code block</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -150,7 +164,7 @@
 					<span>&lt;/pre&gt;</span>
 				</pre>
 			</details>
-			<!-- GET CODE -->
+<!-- GET CODE -->
 			<textarea id="1567209986521" style="display: none">
 <pre class="Codex">
 	<span>&amp;lt;&amp;gt;</span>
@@ -160,7 +174,7 @@
 		</article>
 
 		<article>
-			<h3 id="GetCode">Get code</h3>
+			<h1 id="GetCode">Get code</h1>
 			<p>Add a button to copy code</p>
 			<!-- DETAILS -->
 			<details class="AJxDetails">
@@ -172,10 +186,10 @@
 					<span>&lt;button class="AJxButton" onclick="copyText('xxxxxxxxxxxxxx')"&gt; COPY ALL &lt;/button&gt;</span>
 				</pre>
 			</details>
-			<!-- GET CODE -->
+<!-- GET CODE -->
 			<textarea id="19083019562" style="display: none"></textarea>
 			<button class="AJxButton" onclick="updateGetCode('19083019562')"> Copy snippet </button>
-			<!-- GET CODE -->
+<!-- GET CODE -->
 			<textarea id="19083019565" style="display: none"></textarea>
 			<button class="AJxButton" onclick="updateGetDate('19083019565')"> COPY a UNIQ-ID </button>
 			<script>
@@ -199,12 +213,7 @@
 				}
 			</script>
 		</article>
-
-
-
 	</section>
-	<br><br>
-
 
 	<hr>
 
@@ -224,6 +233,46 @@
 		}
 	</style>
 
+	<div class="nativFlow">
+		<span>button</span> <br>
+		<input type="button" value="This is a Button">
+	</div>
+	<div class="nativFlow">
+		<span>checkbox</span> <br>
+		<input type="checkbox">
+	</div>
+	<div class="nativFlow">
+		<span>email</span> <br>
+		<input type="email">
+	</div>
+	<div class="nativFlow">
+		<span>hidden</span> <br>
+		<input type="hidden">
+	</div>
+	<div class="nativFlow">
+		<span>radio</span> <br>
+		<input type="radio">
+	</div>
+	<div class="nativFlow">
+		<span>reset</span> <br>
+		<input type="reset">
+	</div>
+	<div class="nativFlow">
+		<span>search</span> <br>
+		<input type="search">
+	</div>
+	<div class="nativFlow">
+		<span>submit</span> <br>
+		<input type="submit">
+	</div>
+	<div class="nativFlow">
+		<span>tel</span> <br>
+		<input type="tel">
+	</div>
+	<div class="nativFlow">
+		<span>url</span> <br>
+		<input type="url">
+	</div>
 
 	<div class="nativFlow">
 		<span>Autofocus</span> <br>
@@ -382,6 +431,8 @@
 
 	<hr>
 
+
+
 	<!--
 	===========================================================================
 	AJxContent
@@ -390,11 +441,12 @@
 
 
 	<section>
-		<h2 id="NotificationSystem">Notification System</h2>
-		<p> Show a stack of notifications in the top right <br>
-			<span class="require">Require the Javascript & CSS Framework</span><br>
-		</p>
 		<article>
+			<!-- Notification System -->
+			<h1 id="NotificationSystem">Notification System</h1>
+			<p> Show a stack of notifications in the top right <br>
+				<span class="require">Require the Javascript & CSS Framework</span><br>
+			</p>
 			<h3>Call function</h3>
 			<p>Use <b>text</b> for the message, <b>time</b> is the time it shows, <b>bgcolor</b> is the background
 				color, <b>txcolor</b> is the text color!</p>
@@ -404,26 +456,18 @@
 			</pre>
 			<textarea id="1567203445373" style="display: none">notix(text, time, bgcolor, txcolor)</textarea>
 			<button class="AJxButton" onclick="copyText('1567203445373')"> COPY ALL </button>
-		</article>
-		<article>
 			<Button class="AJxButton"
-				onclick="notix('This is a DEMO text, it disappears in 3 seconds', 3000, 'red', 'yellow')">3000, red,
-				yellow</Button>
-			<Button class="AJxButton" onclick="notix('This is a DEMO text, press it to close!', 0, 'blue', 'white')">0,
-				blue, white</Button>
+				onclick="notix('This is a DEMO text, it disappears in 3 seconds', 3000, 'red', 'yellow')">3000, red, yellow</Button>
+			<Button class="AJxButton" onclick="notix('This is a DEMO text, press it to close!', 0, 'blue', 'white')">0, blue, white</Button>
 		</article>
-	</section>
-
-	<hr>
-
-	<section>
-		<h2 id="AccordionWithSymbols">Accordion with symbols</h2>
-		<p>Slim accordions for use<br>
-			<span class="require">Require the Javascript & CSS Framework</span><br>
-		</p>
 		<article>
-			<p>This is one set of accordion. For multiple accordions, copy the same code multiply times. Its important
-				the elements is in the folloowing order.</p>
+			<!-- Accordion with symbols -->
+			<h1 id="AccordionWithSymbols">Accordion with symbols</h1>
+			<p>Slim accordions for use<br>
+				<span class="require">Require the Javascript & CSS Framework</span><br>
+			</p>
+
+			<p>This is one set of accordion. For multiple accordions, copy the same code multiply times. Its important the elements is in the folloowing order.</p>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -440,17 +484,10 @@
 				</div>
 			</textarea>
 			<button class="AJxButton" onclick="copyText('1567205903835')"> COPY ALL </button>
-
-		</article>
-
-		<article>
+			<br><br>
 			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 1</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex
-					ea commodo consequat.</p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 			</div>
 
 			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 2</button>
@@ -464,20 +501,19 @@
 
 			<button class="AJxAccordion" onclick="ajxAccordion(this)">Section 3</button>
 			<div class="panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex
-					ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		</article>
 	</section>
 
 	<hr>
-
+	<!---------------------------------------------------------------->
+	<!-- FORM ELEMENTS -->
+	<!---------------------------------------------------------------->
 	<section>
-		<h2 id="FormElements">Form elements</h2>
+		<h1 id="FormElements"># Form elements</h1>
 		<article>
+			<!-- Solid Buttons -->
 			<h3 id="SolidButtons">Solid Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -548,13 +584,10 @@
 			<button class="AJxButton" disabled>Button Disabled<span>3</span></button>
 			<button class="AJxButton flat">Button<span>3</span></button>
 			<button class="AJxButton"><i class="fas fa-bullhorn"></i>Alert<span>3</span></button>
-			<br>
-
-
-			<br>
-
+		</article>
+		<article>
+			<!-- Flat buttons -->
 			<h3>Flat buttons</h3>
-
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
@@ -585,10 +618,9 @@
 			<br>
 			<button class="AJxButton white flat">Button</button>
 			<button class="AJxButton white flat large" disabled>Button Large Disabled</button>
-
-
-
-			<br><br>
+		</article>
+		<article>
+			<!-- Special Buttons -->
 			<h3>Special Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -618,8 +650,9 @@
 			<br>
 
 
-			<br>
-			<br>
+		</article>
+		<article>
+			<!-- Tab buttons -->
 			<h3>Tab buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -632,16 +665,16 @@
 				</pre>
 			</details>
 
-
 			<div class="AJxTabs">
-				<button class="AJxButton">Section 0</button>
-				<button class="AJxButton" disabled>Section 1</button>
-				<button class="AJxButton">Section 2</button>
+				<button class="AJxButton">Tab button</button>
+				<button class="AJxButton" disabled>Disable</button>
+				<button class="AJxButton selected">Tab selected</button>
+				<button class="AJxButton">Tab button</button>
 			</div>
-			<br><br>
 
-
-
+		</article>
+		<article>
+			<!-- Button with Icons -->
 			<h3>Button with Icons</h3>
 			<p>Font awesome Icon
 				<br><span class="require">Require the Font awesome Framework</span><br>
@@ -688,13 +721,14 @@
 			<div class="AJxTabs">
 				<button class="AJxButton"><i class="fas fa-award"></i></button>
 				<button class="AJxButton"><i class="fas fa-bullhorn"></i></button>
-				<button class="AJxButton"><i class="fas fa-check"></i></button>
+				<button class="AJxButton selected"><i class="fas fa-check"></i></button>
 				<button class="AJxButton"><i class="fas fa-comment-alt"></i></button>
 			</div>
-			<br>
 
-			<br>
-			<br>
+
+		</article>
+		<article>
+			<!-- Toggle Switch -->
 			<h3 id="ToggleSwitch">Toggle Switch</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -811,12 +845,10 @@
 				<span class="slider round"></span>
 			</label>
 
-			<br><br>
 
-
-
-
-
+		</article>
+		<article>
+			<!-- Custom Checkboxes -->
 			<h3 id="CustomCheckboxes">Custom Checkboxes</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -861,9 +893,9 @@
 
 
 
-
-
-
+		</article>
+		<article>
+			<!-- Custom Radio Buttons -->
 			<h3 id="CustomRadioButtons">Custom Radio Buttons</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -907,7 +939,9 @@
 
 
 
-			<br>
+		</article>
+		<article>
+			<!-- Drag Range -->
 			<h3 id="DragRange">Drag Range</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -918,9 +952,7 @@
 
 
 
-			<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px"
-				onmouseup="cli()">
-			<br>
+			<input class="AJxRange" type=range min=0 max=100 step=5 value="50" id="drag" style="width: 200px" onmouseup="cli()">
 
 			<script>
 				function cli() {
@@ -933,7 +965,9 @@
 			</script>
 
 
-			<br>
+		</article>
+		<article>
+			<!-- Progress -->
 			<h3 id="Progress">Progress</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -944,14 +978,11 @@
 
 
 			<progress max="100" value="66" id="prog1" style="width: 200px" class="AJxProgress"></progress>
-			<br>
-
-
-
-
-
-
-			<br>
+			
+			
+		</article>
+		<article>
+			<!-- Select -->
 			<h3 id="Select">Select</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
@@ -970,6 +1001,7 @@
 			</details>
 
 
+		
 			<div class="AJxSelect" style="width: 100px">
 				<select>
 					<option>--Select--</option>
@@ -1026,7 +1058,9 @@
 
 
 
-			<br>
+		</article>
+		<article>
+			<!-- Multi Select -->
 			<h3>Multi Select</h3>
 
 			<details class="AJxDetails">
@@ -1080,10 +1114,12 @@
 					<option>Potato</option>
 				</optgroup>
 			</select>
-			<br>
-
-
-
+			
+			
+			
+		</article>
+		<article>
+			<!-- Input -->
 			<h3 id="Input">Input</h3>
 			<br>
 			<details class="AJxDetails">
@@ -1165,17 +1201,17 @@
 				</pre>
 			</details>
 			<br>
-
-
 		</article>
 	</section>
 
-<hr>
-
+	<hr>
+	<!---------------------------------------------------------------->
+	<!-- TYPOGRAPHY -->
+	<!---------------------------------------------------------------->
 	<section>
-		<h2 id="Typography">Typography</h2>
+		<h1 id="Typography"># Typography</h1>
 		<article>
-			<h3>Fonts</h3>
+			<h1>Fonts</h1>
 			<p>Standard: Google Roboto font family</p>
 			<pre class="Codex">
 				<span>html {</span>
@@ -1185,39 +1221,38 @@
 
 		</article>
 
-		<article>
-			<h3 id="Headers">Headers</h3>
+		<div style="padding: 13px;">
+			<h2 id="Headers">Headers</h2>
 
 			<h1>Heading h1</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+	
 			<h2>Heading h2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+	
 			<h3>Heading h3</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+	
 			<h4>Heading h4</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+	
 			<h5>Heading h5</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+	
 			<h6>Heading h6</h6>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-
-		</article>
+	
+		</div>
 
 		<article>
-			<h3 id="Blockquotes">Blockquotes</h3>
+			<h1 id="Blockquotes">Blockquotes</h1>
 			<blockquote>
 				This is an example quotation that uses the blockquote tag.
 			</blockquote>
 		</article>
 
 		<article>
-			<h3 id="Format">Format</h3>
+			<h1 id="Format">Format</h1>
 			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
 			<p><del>This line of text is meant to be treated as deleted text.</del></p>
 			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -1229,20 +1264,14 @@
 		</article>
 	</section>
 
-
-
-
-
-
-
 	<section>
-		<h2>Lists</h2>		
+		<h1>Lists</h1>		
 		<article>
 			<h3 id="DescriptionLists">Description Lists</h3>
 			<details class="AJxDetails">
 				<summary> See code </summary>
 				<pre class="Codex">
-					<span>&lt;dl class="horizontal"&gt;</span>
+					<span>&lt;dl class="AJxDLList"&gt;</span>
 					<span>	&lt;dt&gt;Description lists&lt;/dt&gt;</span>
 					<span>	&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;</span>
 					<span>	&lt;dt&gt;Euismod&lt;/dt&gt;</span>
@@ -1256,7 +1285,7 @@
 						
 			
 			<textarea id="1567366365922" style="display: none">
-<dl class="horizontal">
+<dl class="AJxDLList">
 	<dt>Description lists</dt>
 	<dd>A description list is perfect for defining terms.</dd>
 	<dt>Euismod</dt>
@@ -1267,15 +1296,21 @@
 </dl>
 			</textarea>
 			<button class="AJxButton" onclick="copyText('1567366365922')"> Copy snippet </button>
-			<dl class="horizontal">
+			<br><br>
+			<dl class="AJxDLList">
 				<dt>Description lists</dt>
 				<dd>A description list is perfect for defining terms.</dd>
 				<dt>Euismod</dt>
 				<dd>Vestibulum id ligula porta felis euismod semper.</dd>
 				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
 				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis magna mollis magna mollis magna mollis magna mollis magna mollis magna mollis euismod.</dd>
+				<dt>Malesuada porta porta porta porta porta porta porta porta porta porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				<dt>Malesuada porta</dt>
 				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 			</dl>
+
 		</article>
 		
 		<article id="StepList">
@@ -1560,8 +1595,58 @@
 		</article>
 	</section>
 
-<hr>
 
+	<hr>
+	<!---------------------------------------------------------------->
+	<!-- lorem ipsum -->
+	<!---------------------------------------------------------------->
+	<section>
+		<h1># Lorem Ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt accumsan viverra. Mauris tempor arcu id ultrices tempus. Suspendisse porta iaculis pulvinar. Donec ornare lacus luctus dolor euismod, nec congue purus viverra. Proin facilisis mollis purus, nec efficitur sapien. Duis blandit erat a pretium accumsan. Morbi mi nibh, egestas ac orci quis, egestas volutpat odio.</p>
+		<details class="AJxDetails">
+			<summary> See full text </summary>
+			<textarea id="1597182489256" style="width: 100%; height: 350px;"></textarea>
+		</details>
+
+		<article>
+			<textarea id="1597266326614" style="display: none">Lorem</textarea>
+			<button class="AJxButton" onclick="copyText('1597266326614')"> Lorem </button>
+			<textarea id="1597266666546" style="display: none">ipsum</textarea>
+			<button class="AJxButton" onclick="copyText('1597266666546')"> ipsum </button>
+			<textarea id="1597266674974" style="display: none">Lorem ipsum</textarea>
+			<button class="AJxButton" onclick="copyText('1597266674974')"> Lorem ipsum </button>
+			<textarea id="1597266680531" style="display: none">Lorem ipsum dolor sit amet</textarea>
+			<button class="AJxButton" onclick="copyText('1597266680531')"> Lorem ipsum dolor sit amet </button>
+			<textarea id="1597266685622" style="display: none">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+			<button class="AJxButton" onclick="copyText('1597266685622')"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </button>
+			<br>
+			<textarea id="1597266692176" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt accumsan viverra. Mauris tempor arcu id ultrices tempus. Suspendisse porta iaculis pulvinar. Donec ornare lacus luctus dolor euismod, nec congue purus viverra. Proin facilisis mollis purus, nec efficitur sapien. Duis blandit erat a pretium accumsan. Morbi mi nibh, egestas ac orci quis, egestas volutpat odio.</textarea>
+			<button class="AJxButton" onclick="copyText('1597266692176')"> 1 COL </button>
+			<textarea id="1597266697566" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt accumsan viverra. Mauris tempor arcu id ultrices tempus. Suspendisse porta iaculis pulvinar. Donec ornare lacus luctus dolor euismod, nec congue purus viverra. Proin facilisis mollis purus, nec efficitur sapien. Duis blandit erat a pretium accumsan. Morbi mi nibh, egestas ac orci quis, egestas volutpat odio.
+
+Nullam varius mi sed tortor ornare tempor. Suspendisse laoreet ultrices mauris at efficitur. Nunc cursus in nisi quis mollis. Integer elementum sodales tellus, euismod finibus lectus tincidunt a. Fusce egestas eros sed urna congue finibus. Proin dapibus sollicitudin nulla, vel luctus felis varius et. Vestibulum augue diam, elementum in eros sed, facilisis vulputate nibh. In mollis et ligula vel ultrices. Phasellus vitae metus pretium, maximus augue eu, cursus felis. Aenean dui risus, ullamcorper vel ligula eget, auctor finibus ipsum. Nullam purus diam, varius sit amet massa vel, ultrices aliquam ipsum. Ut ut eleifend leo, quis consequat purus. Nunc quis erat non massa faucibus cursus ut eu ligula.</textarea>
+			<button class="AJxButton" onclick="copyText('1597266697566')"> 2 COL </button>
+		</article>
+
+	</section>
+	<script src="data/loremipsum/data.js"></script>
+	<script>
+		AJxLorem.forEach(element => {
+			let obj = document.getElementById("1597182489256");
+			obj.innerHTML += element
+			obj.innerHTML += "\n\n"
+		});
+	</script>
+
+
+
+
+	<hr>
+	<!---------------------------------------------------------------->
+	<!-- NONE NATIVE -->
+	<!---------------------------------------------------------------->
 	<h1 id="NoneNative">NONE NATIVE</h1>
 
 	<section>
@@ -1726,7 +1811,7 @@
 
 
 
-	<script src="js/ajxf.js"></script>
+	<script src="js/ajxui.js"></script>
 
 </body>
 

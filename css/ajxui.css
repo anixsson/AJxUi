@@ -1,80 +1,55 @@
-
 /*#      ___        __      _____               __                         */
 /*#     /   |      / /_  __/ ___/ __  __ _____ / /_ ___   ____ ___   _____ */
 /*#    / /| | __  / /| |/_/\__ \ / / / // ___// __// _ \ / __ `__ \ / ___/ */
 /*#   / ___ |/ /_/ /_>  < ___/ // /_/ /(__  )/ /_ /  __// / / / / /(__  )  */
 /*#  /_/  |_|\____//_/|_|/____/ \__, //____/ \__/ \___//_/ /_/ /_//____/   */
 /*#                            /____/                                      */
+/*# 													www.ajxsystems.com */
+/* 	  TITLE: AJxUI CSS Framework
+	   DATE: 2020-xx-xx
+	VERSION: x.x.x
+*/
 
-* {
-	margin: 0px;
-	padding: 0px;
-}
+* { margin: 0px; padding: 0px; }
 
-html {
-	font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
-}
+html { font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif; }
 
-body {
-	text-align: center;
-	width: 100%;
-}
+body { text-align: center; width: 100%; }
 
 section {
-	margin: 50px 0px;
+	width: 90%;
+	margin: 0px 0px;
+	padding: 0px 10px;
 	text-align: left;
 	display: inline-block;
-	width: 90%;
-	padding: 10px;
+	border-left: solid 1px #eaeaea;
 }
+section p { font-size: 14px; }
+section h1 { font-size: 30px; line-height: 50px; margin-top: 10px; }
+section h2 { font-size: 22px; line-height: 28px; margin-top: 5px; }
+section h3 { font-size: 18px; line-height: 20px; margin-top: 5px; }
+section h4 { font-size: 15px; line-height: 15px; margin-top: 5px;}
 
 article {
 	width: 100%;
 	margin: 15px 0px;
-	padding: 10px;
+	padding: 3px 10px;
+	border-left: solid 1px #eaeaea;
 }
+article p { font-size: 14px; }
+article h1 { font-size: 24px; line-height: 40px; margin-top: 10px; }
+article h2 { font-size: 22px; line-height: 28px; margin-top: 5px; }
+article h3 { font-size: 18px; line-height: 20px; margin-top: 5px; }
+article h4 { font-size: 15px; line-height: 15px; margin-top: 5px;}
 
+h1 { font-size: 36px; line-height: 70px; margin-top: 10px; }
+h2 { font-size: 25px; line-height: 50px; margin-top: 10px; }
+h3 { font-size: 22px; line-height: 28px; margin-top: 5px; }
+h4 { font-size: 18px; line-height: 20px; margin-top: 5px; }
+h5 { font-size: 15px; line-height: 15px; margin-top: 5px; }
+h6 { font-size: 12px; line-height: 14px; margin-top: 5px; }
 
-
-
-
-
-
-h1 {
-	font-size: 40px;
-	line-height: 80px;
-	margin-top: 10px;
-}
-h2 {
-	font-size: 30px;
-	line-height: 50px;
-	margin-top: 10px;
-}
-h3 {
-	font-size: 22px;
-	line-height: 30px;
-	margin-top: 5px;
-}
-h4 {
-	font-size: 18px;
-	line-height: 20px;
-	margin-top: 5px;
-}
-h5 {
-	font-size: 15px;
-	line-height: 18px;
-	margin-top: 5px;
-}
-h6 {
-	font-size: 12px;
-	line-height: 14px;
-	margin-top: 5px;
-}
-
-p {
-	font-size: 15px;
-	margin: 5px 0px;
-}
+p {	font-size: 12px; margin: 5px 0px; }
 
 blockquote {
 	border-left: solid 3px rgb(111, 124, 128);
@@ -83,14 +58,107 @@ blockquote {
 }
 
 
-/* SPECIAL CSS */
-section h1 {
-	margin-top: 0px;
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 12px;
+}
+th {
+	font-weight: bold;
+	font-size: 12px;
+}
+th, td {
+	text-align: left;
+	padding: 3px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+ul {
+	font-size: 12px;
+	list-style-type: square;
+	text-align: left;
+}
+ul ul {
+	margin-left: 16px;
+}
+li {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 16px;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 
 
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb {	background: #888; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
 
+
+
+/* #################################################################### */
+/* COLORS ############################################################# */
 
 .AJxBgC-mainDark {background-color: #005a9e !important}
 .AJxBgC-mainDarkAlt{background-color: #106ebe !important}
@@ -190,38 +258,8 @@ section h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SLIDER */
+/* #################################################################### */
+/* Switch Normal, Blue */
 
 .AJxSwitch {
 	position: relative;
@@ -266,86 +304,42 @@ section h1 {
 	transition: .4s;
 }
 
-.AJxSwitch input:checked + .slider {
-	background-color: #0078d7;
-}
-
-.AJxSwitch input:focus + .slider {
-	box-shadow: 0 0 0 #0078d7;
-}
-
+.AJxSwitch input:checked + .slider { background-color: #0078d7; }
+.AJxSwitch input:focus + .slider { box-shadow: 0 0 0 #0078d7; }
 .AJxSwitch input:checked + .slider:before {
 	-webkit-transform: translateX(16px);
 	-ms-transform: translateX(16px);
 	transform: translateX(16px);
 }
+.AJxSwitch input:disabled + .slider { background-color: #dcdcdc; }
 
-.AJxSwitch input:disabled + .slider {
-	background-color: #dcdcdc;
-}
-
-/* Rounded sliders */
-.AJxSwitch .slider.round {
-	border-radius: 15px;
-}
-
-.AJxSwitch .slider.round:before {
-	border-radius: 50%;
-}
+.AJxSwitch .slider.round { border-radius: 15px; }
+.AJxSwitch .slider.round:before { border-radius: 50%; }
 
 
+/* #################################################################### */
+/* Switch Red */
+.AJxSwitch.red input:checked + .slider { background-color: #e81123 !important; }
+.AJxSwitch.red .slider:hover { background-color: #ff9794; }
+.AJxSwitch.red .slider { background-color: #e1c8cc; }
+.AJxSwitch.red .slider.round { border-radius: 15px; }
+.AJxSwitch.red .slider.round:before { border-radius: 50%; }
 
-.AJxSwitch.red input:checked + .slider {
-	background-color: #e81123 !important;
-}
+/* #################################################################### */
+/* Switch Green */
+.AJxSwitch.green input:checked + .slider { background-color: #108e10 !important; }
+.AJxSwitch.green .slider:hover { background-color: #6aca6a; }
+.AJxSwitch.green .slider { background-color: #bae1b7; }
+.AJxSwitch.green .slider.round { border-radius: 15px; }
+.AJxSwitch.green .slider.round:before {	border-radius: 50%; }
 
-.AJxSwitch.red .slider:hover {
-	background-color: #ff9794;
-}
-.AJxSwitch.red .slider {
-	background-color: #e1c8cc;
-}
-.AJxSwitch.red .slider.round {
-	border-radius: 15px;
-}
-
-.AJxSwitch.red .slider.round:before {
-	border-radius: 50%;
-}
-
-.AJxSwitch.green input:checked + .slider {
-	background-color: #108e10 !important;
-}
-.AJxSwitch.green .slider:hover {
-	background-color: #6aca6a;
-}
-.AJxSwitch.green .slider {
-	background-color: #bae1b7;
-}
-.AJxSwitch.green .slider.round {
-	border-radius: 15px;
-}
-
-.AJxSwitch.green .slider.round:before {
-	border-radius: 50%;
-}
-
-.AJxSwitch.yellow input:checked + .slider {
-	background-color: #edd600 !important;
-}
-.AJxSwitch.yellow .slider:hover {
-	background-color: #f5f566;
-}
-.AJxSwitch.yellow .slider {
-	background-color: #e1dfbc;
-}
-.AJxSwitch.yellow .slider.round {
-	border-radius: 15px;
-}
-
-.AJxSwitch.yellow .slider.round:before {
-	border-radius: 50%;
-}
+/* #################################################################### */
+/* Switch Yellow */
+.AJxSwitch.yellow input:checked + .slider {	background-color: #edd600 !important; }
+.AJxSwitch.yellow .slider:hover { background-color: #f5f566; }
+.AJxSwitch.yellow .slider {	background-color: #e1dfbc; }
+.AJxSwitch.yellow .slider.round { border-radius: 15px; }
+.AJxSwitch.yellow .slider.round:before { border-radius: 50%; }
 
 
 
@@ -353,8 +347,9 @@ section h1 {
 
 
 
-
+/* #################################################################### */
 /* AJxCheckbox */
+
 .AJxCheckbox {
 	display: inline-block;
 	position: relative;
@@ -390,7 +385,6 @@ section h1 {
 	transition: .4s;
 }
 
-/* On mouse-over, add a grey background color */
 .AJxCheckbox:hover input ~ .checkmark {
 	background-color: #ccc;
 }
@@ -438,10 +432,9 @@ section h1 {
 
 
 
-
-
-
+/* #################################################################### */
 /* AJxRadio */
+
 .AJxRadio {
 	display: inline-block;
 	position: relative;
@@ -521,7 +514,8 @@ section h1 {
 
 
 
-/*BLUE BUTTON START*/
+/* #################################################################### */
+/* AJxButton */
 .AJxButton span {
 	background-color: #d70300;
 	color: #ffffff;
@@ -563,8 +557,9 @@ section h1 {
 }
 
 .AJxButton:disabled{
-	background-color: #b3d6f2;
-	border: 0px solid #b3d6f2;
+	background-color: #1361a5ab;
+	color: rgba(255, 255, 255, 0.5);
+	cursor: default;
 }
 .AJxButton i{
 	margin-right: 1px;
@@ -606,310 +601,79 @@ section h1 {
 .AJxButton.flat i{
 	margin-right: 1px;
 }
-
 /*BLUE BUTTON END*/
 
 /*RED BUTTON START*/
-
-.AJxButton.red.large {
-	padding: 6px 13px;
-}
-.AJxButton.red {
-	background-color: #f43434;
-	border:0px solid #f43434;
-	color: #ffffff;
-	font-size:12px;
-	padding:3px 8px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.red:hover {
-	background-color: #ff484a;
-}
-
-.AJxButton.red:active {
-	text-shadow: 0px -1px #886a6b;
-	background-color: #dd362f;
-}
-
-.AJxButton.red:focus {
-	box-shadow: 0 0 0 #f43434;
-	outline: none;
-}
-
-.AJxButton.red:disabled{
-	background-color: #ffd1cc;
-	border: 0px solid #ffd1cc;
-}
-.AJxButton.red i{
-	margin-right: 1px;
-}
-
-
-.AJxButton.red.flat.large {
-	padding: 6px 17px;
-}
-.AJxButton.red.flat {
-	background-color: rgba(255, 255, 255, 0);
-	border:1px solid #f43434;
-	color: #f43434;
-	font-size:12px;
-	padding:2px 7px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.red.flat:hover {
-	border:1px solid #ff877e;
-	color: #ff877e;
-}
-
-.AJxButton.red.flat:active {
-	border:1px solid #ffd1cc;
-	color: #ffd1cc;
-	text-shadow: 0px 0px rgba(255, 255, 255, 0);
-}
-
-.AJxButton.red.flat:focus {
-	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
-	outline: none;
-}
-
-.AJxButton.red.flat:disabled{
-	border:1px solid #ffd8dc;
-	color: #ffd8dc;
-}
-.AJxButton.red.flat i{
-	margin-right: 1px;
-}
-
+.AJxButton.red.large { padding: 6px 13px; }
+.AJxButton.red { background-color: #f43434;	border:0px solid #f43434; color: #ffffff; font-size:12px; padding:3px 8px; text-decoration:none; cursor: pointer; }
+.AJxButton.red:hover { background-color: #ff484a; }
+.AJxButton.red:active {	text-shadow: 0px -1px #886a6b; background-color: #dd362f; }
+.AJxButton.red:focus { box-shadow: 0 0 0 #f43434; outline: none; }
+.AJxButton.red:disabled{ background-color: #a51313ab; color: rgba(255, 255, 255, 0.5); cursor: default; }
+.AJxButton.red i{ margin-right: 1px; }
+.AJxButton.red.flat.large {	padding: 6px 17px; }
+.AJxButton.red.flat { background-color: rgba(255, 255, 255, 0);	border:1px solid #f43434; color: #f43434; font-size:12px; padding:2px 7px; text-decoration:none; cursor: pointer; }
+.AJxButton.red.flat:hover { border:1px solid #ff877e; color: #ff877e; }
+.AJxButton.red.flat:active { border:1px solid #ffd1cc;	color: #ffd1cc;	text-shadow: 0px 0px rgba(255, 255, 255, 0); }
+.AJxButton.red.flat:focus { box-shadow: 0 0 0 rgba(33, 150, 243, 0); outline: none; }
+.AJxButton.red.flat:disabled{ border:1px solid #ffd8dc;	color: #ffd8dc; }
+.AJxButton.red.flat i{	margin-right: 1px; }
 /*RED BUTTON END*/
 
 /*GREEN BUTTON START*/
-
-.AJxButton.green.large {
-	padding: 6px 13px;
-}
-.AJxButton.green {
-	background-color: #119911;
-	border:0px solid #119911;
-	color: #ffffff;
-	font-size:12px;
-	padding:3px 8px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.green:hover {
-	background-color: #35b13d;
-}
-
-.AJxButton.green:active {
-	text-shadow: 0px -1px #658871;
-	background-color: #119911;
-}
-
-.AJxButton.green:focus {
-	box-shadow: 0 0 0 #119911;
-	outline: none;
-}
-
-.AJxButton.green:disabled{
-	background-color: #a6e2af;
-	border: 0px solid #a6e2af;
-}
-.AJxButton.green i{
-	margin-right: 1px;
-}
-
-
-.AJxButton.green.flat.large {
-	padding: 6px 17px;
-}
-.AJxButton.green.flat {
-	background-color: rgba(255, 255, 255, 0);
-	border:1px solid #119911;
-	color: #119911;
-	font-size:12px;
-	padding:2px 7px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.green.flat:hover {
-	border:1px solid #6de171;
-	color: #6de171;
-}
-
-.AJxButton.green.flat:active {
-	border:1px solid #a2ffb0;
-	color: #a2ffb0;
-	text-shadow: 0px 0px rgba(255, 255, 255, 0);
-}
-
-.AJxButton.green.flat:focus {
-	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
-	outline: none;
-}
-
-.AJxButton.green.flat:disabled{
-	border:1px solid #a2ffb0;
-	color: #a2ffb0;
-}
-.AJxButton.green.flat i{
-	margin-right: 1px;
-}
-
+.AJxButton.green.large {padding: 6px 13px;}
+.AJxButton.green {background-color: #119911;border:0px solid #119911;color: #ffffff;font-size:12px;	padding:3px 8px;text-decoration:none;cursor: pointer;}
+.AJxButton.green:hover {background-color: #35b13d;}
+.AJxButton.green:active {text-shadow: 0px -1px #658871;	background-color: #119911;}
+.AJxButton.green:focus {box-shadow: 0 0 0 #119911;	outline: none;}
+.AJxButton.green:disabled{	background-color: #1fa513ab;color: rgba(255, 255, 255, 0.5);cursor: default;}
+.AJxButton.green i{	margin-right: 1px;}
+.AJxButton.green.flat.large {padding: 6px 17px;}
+.AJxButton.green.flat {	background-color: rgba(255, 255, 255, 0);border:1px solid #119911;color: #119911;font-size:12px;	padding:2px 7px;text-decoration:none;cursor: pointer;}
+.AJxButton.green.flat:hover {	border:1px solid #6de171;color: #6de171;}
+.AJxButton.green.flat:active {	border:1px solid #a2ffb0;	color: #a2ffb0;	text-shadow: 0px 0px rgba(255, 255, 255, 0);}
+.AJxButton.green.flat:focus {	box-shadow: 0 0 0 rgba(33, 150, 243, 0);	outline: none;}
+.AJxButton.green.flat:disabled{	border:1px solid #a2ffb0;	color: #a2ffb0;}
+.AJxButton.green.flat i{margin-right: 1px;}
 /*GREEN BUTTON END*/
 
 /*BLACK BUTTON START*/
-
-.AJxButton.black.large {
-	padding: 6px 13px;
-}
-.AJxButton.black {
-	background-color: #333333;
-	border:0px solid #333333;
-	color: #ffffff;
-	font-size:12px;
-	padding:3px 8px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.black:hover {
-	background-color: #5e5e5e;
-}
-
-.AJxButton.black:active {
-	text-shadow: 0px -1px #727272;
-	background-color: #2e2e2e;
-}
-
-.AJxButton.black:focus {
-	box-shadow: 0 0 0 #333333;
-	outline: none;
-}
-
-.AJxButton.black:disabled{
-	background-color: #c2c2c2;
-	border: 0px solid #c2c2c2;
-}
-.AJxButton.black i{
-	margin-right: 1px;
-}
-
-
-.AJxButton.black.flat.large {
-	padding: 6px 17px;
-}
-.AJxButton.black.flat {
-	background-color: rgba(255, 255, 255, 0);
-	border:1px solid #333333;
-	color: #333333;
-	font-size:12px;
-	padding:2px 7px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.black.flat:hover {
-	border:1px solid #808080;
-	color: #808080;
-}
-
-.AJxButton.black.flat:active {
-	border:1px solid #c5c5c5;
-	color: #c5c5c5;
-	text-shadow: 0px 0px rgba(255, 255, 255, 0);
-}
-
-.AJxButton.black.flat:focus {
-	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
-	outline: none;
-}
-
-.AJxButton.black.flat:disabled{
-	border:1px solid #c5c5c5;
-	color: #c5c5c5;
-}
-.AJxButton.black.flat i{
-	margin-right: 1px;
-}
-
+.AJxButton.black.large {	padding: 6px 13px;}
+.AJxButton.black {	background-color: #333333;	border:0px solid #333333;	color: #ffffff;	font-size:12px;	padding:3px 8px;	text-decoration:none;	cursor: pointer;}
+.AJxButton.black:hover {	background-color: #5e5e5e;}
+.AJxButton.black:active {	text-shadow: 0px -1px #727272;	background-color: #2e2e2e;}
+.AJxButton.black:focus {	box-shadow: 0 0 0 #333333;	outline: none;}
+.AJxButton.black:disabled{	background-color: #363636ab;	color: rgba(255, 255, 255, 0.5);	cursor: default;}
+.AJxButton.black i{	margin-right: 1px;}
+.AJxButton.black.flat.large {	padding: 6px 17px;}
+.AJxButton.black.flat {	background-color: rgba(255, 255, 255, 0);	border:1px solid #333333;	color: #333333;	font-size:12px;	padding:2px 7px;	text-decoration:none;	cursor: pointer;}
+.AJxButton.black.flat:hover {	border:1px solid #808080;	color: #808080;}
+.AJxButton.black.flat:active {	border:1px solid #c5c5c5;	color: #c5c5c5;	text-shadow: 0px 0px rgba(255, 255, 255, 0);}
+.AJxButton.black.flat:focus {	box-shadow: 0 0 0 rgba(33, 150, 243, 0);	outline: none;}
+.AJxButton.black.flat:disabled{	border:1px solid #c5c5c5;	color: #c5c5c5;}
+.AJxButton.black.flat i{	margin-right: 1px;}
 /*BLACK BUTTON END*/
 
 /*WHITE BUTTON START*/
-
-.AJxButton.white.large {
-	padding: 6px 13px;
-}
-.AJxButton.white {
-	background-color: #e6e6e6;
-	border:0px solid #e2e2e2;
-	color: #1d1d1d;
-	font-size:12px;
-	padding:3px 8px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.white:hover {
-	background-color: #d8d8d8;
-}
-
-.AJxButton.white:active {
-	text-shadow: 0px 1px #c5c5c5;
-	background-color: #c2c2c2;
-}
-
-.AJxButton.white:focus {
-	box-shadow: 0 0 0 #c2c2c2;
-	outline: none;
-}
-
-.AJxButton.white:disabled{
-	background-color: #ebebeb;
-	color: rgb(185, 185, 185);
-	border: 0px solid #c2c2c2;
-}
-.AJxButton.white i{
-	margin-right: 1px;
-}
-
-
-.AJxButton.white.flat.large {
-	padding: 6px 17px;
-}
-.AJxButton.white.flat {
-	background-color: rgba(218, 218, 218, 0);
-	border:1px solid #dadada;
-	color: #dadada;
-	font-size:12px;
-	padding:2px 7px;
-	text-decoration:none;
-	cursor: pointer;
-}
-.AJxButton.white.flat:hover {
-	border:1px solid #9c9c9c;
-	color: #949494;
-}
-
-.AJxButton.white.flat:active {
-	border:1px solid #727272;
-	color: #777777;
-	text-shadow: 0px 0px rgba(255, 255, 255, 0);
-}
-
-.AJxButton.white.flat:focus {
-	box-shadow: 0 0 0 rgba(33, 150, 243, 0);
-	outline: none;
-}
-
-.AJxButton.white.flat:disabled{
-	border:1px solid #e0e0e0;
-	color: #b4b4b4;
-}
-.AJxButton.white.flat i{
-	margin-right: 1px;
-}
-
+.AJxButton.white.large {	padding: 6px 13px;}
+.AJxButton.white {	background-color: #e6e6e6;	border:0px solid #e2e2e2;	color: #1d1d1d;	font-size:12px;	padding:3px 8px;	text-decoration:none;	cursor: pointer;}
+.AJxButton.white:hover {	background-color: #d8d8d8;}
+.AJxButton.white:active {	text-shadow: 0px 1px #c5c5c5;	background-color: #c2c2c2;}
+.AJxButton.white:focus {box-shadow: 0 0 0 #c2c2c2;	outline: none;}
+.AJxButton.white:disabled{	background-color: #888888ab;	color: rgba(255, 255, 255, 0.5);	cursor: default;}
+.AJxButton.white i{	margin-right: 1px;}
+.AJxButton.white.flat.large {	padding: 6px 17px;}
+.AJxButton.white.flat {	background-color: rgba(218, 218, 218, 0);	border:1px solid #dadada;	color: #dadada;	font-size:12px;padding:2px 7px;	text-decoration:none;	cursor: pointer;}
+.AJxButton.white.flat:hover {border:1px solid #9c9c9c;	color: #949494;}
+.AJxButton.white.flat:active {	border:1px solid #727272;	color: #777777;	text-shadow: 0px 0px rgba(255, 255, 255, 0);}
+.AJxButton.white.flat:focus {	box-shadow: 0 0 0 rgba(33, 150, 243, 0);	outline: none;}
+.AJxButton.white.flat:disabled{	border:1px solid #e0e0e0;	color: #b4b4b4;}
+.AJxButton.white.flat i{	margin-right: 1px;}
 /*WHITE BUTTON END*/
 
+
+/* #################################################################### */
+/* AJxButton SP01 */
 
 .AJxButton_SP01 {
 	display: inline-block;
@@ -941,26 +705,8 @@ section h1 {
 	user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* #################################################################### */
+/* AJxButton SP02 */
 
 .AJxButton_SP02 {
 	text-align: center;
@@ -1041,10 +787,13 @@ section h1 {
 
 
 
-
+/* #################################################################### */
+/* AJxTabs */
 
 .AJxTabs{
-	display: block;
+	display: inline-block;
+	background-color: #0078d7;
+	padding: 1px;
 }
 .AJxTabs button:first-child{
 	border-left: 0px;
@@ -1053,6 +802,22 @@ section h1 {
 	border-left: 1px solid #b8def3;
 	float: left;
 }
+.AJxTabs button:disabled{
+	border-left: 1px solid #b8def3;
+	background-color: #1361a5ab;
+	color: rgba(255, 255, 255, 0.5);
+	cursor: default;
+}
+.AJxTabs .AJxButton.selected{
+	border-left: 1px solid #b8def3;
+	background-color: #ffffff;
+	color: #226fad;
+}
+.AJxTabs .AJxButton.selected:active {
+	text-shadow: 0px 0px 0px #ffffff;
+	background-color: #ffffffef;
+	color: #3d86c2;
+}
 
 
 
@@ -1069,6 +834,8 @@ section h1 {
 
 
 
+/* #################################################################### */
+/* AJxAccordio */
 
 .AJxAccordion {
 	background-color: #eee;
@@ -1106,6 +873,10 @@ section h1 {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+	font-size: 12px;
+}
+.panel p {
+	font-size: 12px;
 }
 
 
@@ -1118,7 +889,8 @@ section h1 {
 
 
 
-
+/* #################################################################### */
+/* AJxProgress */
 
 .AJxProgress[value] {
 	/* Reset the default appearance */
@@ -1145,7 +917,8 @@ section h1 {
 
 
 
-
+/* #################################################################### */
+/* AJxRange */
 
 .AJxRange {
 	height: 27px;
@@ -1191,7 +964,8 @@ section h1 {
 
 
 
-
+/* #################################################################### */
+/* AJxSelect */
 
 .AJxSelect {
 	position: relative;
@@ -1251,16 +1025,11 @@ section h1 {
 
 
 
+/* #################################################################### */
+/* AJxDLList */
 
-
-
-
-
-
-
-
-
-dl.horizontal dt {
+.AJxDLList dt{
+	font-size: 12px;
 	float: left;
 	width: 10rem;
 	overflow: hidden;
@@ -1270,7 +1039,8 @@ dl.horizontal dt {
 	white-space: nowrap;
 	font-weight: bold;
 }
-dl.horizontal dd {
+.AJxDLList dd {
+	font-size: 12px;
 	margin-left: 11.25rem;
 }
 
@@ -1280,11 +1050,8 @@ dl.horizontal dd {
 
 
 
-
-
-
-
-
+/* #################################################################### */
+/* AJxInput */
 
 .AJxInput {
 	font-family: "Courier New";
@@ -1341,42 +1108,6 @@ textarea.LineInput:focus {
 
 
 
-
-/* SCROLLBAR */
-
-/* width */
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-	background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .AJxInput::-webkit-inner-spin-button,
 .AJxInput::-webkit-outer-spin-button {
 	height: 30px;
@@ -1388,19 +1119,8 @@ textarea.LineInput:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* #################################################################### */
+/* Step List */
 
 .step-list {
 	margin: 0 0 0 3em;
@@ -1440,64 +1160,8 @@ textarea.LineInput:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-table {
-	border-collapse: collapse;
-	width: 100%;
-	font-size: 12px;
-}
-th {
-	font-weight: bold;
-	font-size: 13px;
-}
-th, td {
-	text-align: left;
-	padding: 3px;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-
-
-
-
-
-
-
-
-
-ul {
-	font-size: 12px;
-	list-style-type: square;
-	text-align: left;
-}
-ul ul {
-	margin-left: 16px;
-}
-li {
-	margin-left: 16px;
-}
-
-
-
-
-
-
-
+/* #################################################################### */
+/* Table slim */
 
 table.slim {
 	font-family: Arial, Helvetica, sans-serif;
@@ -1533,13 +1197,8 @@ font-weight: normal;
 
 
 
-
-
-
-
-
-
-
+/* #################################################################### */
+/* Codex */
 
 .Codex, pre {
 	font-family: monospace;
@@ -1569,9 +1228,8 @@ font-weight: normal;
 
 
 
-
-
-
+/* #################################################################### */
+/* AJxDetails */
 
 .AJxDetails {
 	margin: 10px 0px;
@@ -1834,112 +1492,6 @@ font-weight: normal;
 	0%, 39%, 100% { opacity: 0; }
 	40% { opacity: 1; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* cyrillic-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
-	unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
-	unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url(../fonts/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
