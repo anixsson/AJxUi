@@ -4,7 +4,7 @@
 /*#   / ___ |/ /_/ /_>  < ___/ // /_/ /(__  )/ /_ /  __// / / / / /(__  )  */
 /*#  /_/  |_|\____//_/|_|/____/ \__, //____/ \__/ \___//_/ /_/ /_//____/   */
 /*#                            /____/                                      */
-/*# 													www.ajxsystems.com */
+/*#                                                     www.ajxsystems.com */
 /* 	  TITLE: AJxUI CSS Framework
 	   DATE: 2020-xx-xx
 	VERSION: 2.0
@@ -154,6 +154,12 @@ li {
 ::-webkit-scrollbar-track { background: #f1f1f1; }
 ::-webkit-scrollbar-thumb {	background: #888; }
 ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* SCROLLBAR */
+::-moz-scrollbar { width: 10px; }
+::-moz-scrollbar-track { background: #f1f1f1; }
+::-moz-scrollbar-thumb {	background: #888; }
+::-moz-scrollbar-thumb:hover { background: #555; }
 
 
 

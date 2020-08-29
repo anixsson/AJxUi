@@ -4,11 +4,13 @@
 /*#   / ___ |/ /_/ /_>  < ___/ // /_/ /(__  )/ /_ /  __// / / / / /(__  )  */
 /*#  /_/  |_|\____//_/|_|/____/ \__, //____/ \__/ \___//_/ /_/ /_//____/   */
 /*#                            /____/                                      */
-/*# 													www.ajxsystems.com */
-/* 	  TITLE: AJxUI Javascript Framework
-	   DATE: 2020-xx-xx
-	VERSION: 2.0
+/*#                                                     www.ajxsystems.com */
+/*#	 TITLE: AJxUI Javascript Framework
+	    DATE: 2020-xx-xx
+	 VERSION: 2.0
 */
+
+// TODO: ADD A FRONTFACE USABLE SCROLL CUSTOM STYLE
 
 //
 // Accordion
