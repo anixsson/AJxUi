@@ -90,6 +90,24 @@ li {
 	margin-left: 16px;
 }
 
+fieldset {
+	border: solid 1px black;
+	padding: 5px 10px;
+}
+
+fieldset legend {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+label {
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	bottom: -3px;
+}
+
 /* cyrillic-ext */
 @font-face {
 	font-family: 'Roboto';
